@@ -58,6 +58,10 @@ table {
 	box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
 /******************************
 			Fonts
 *******************************/
@@ -77,6 +81,13 @@ table {
         url('../Static/Fonts/Raleway-Light.woff') format('woff'),
         url('../Static/Fonts/Raleway-Light.ttf') format('ttf');
     font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../Static/Fonts/Raleway-ExtraLight.ttf') format('ttf');
+    font-weight: 200;
     font-style: normal;
 }
 
@@ -109,6 +120,7 @@ a:hover {
 	background: #0D1F3A;
 	color: #FFFFFF;
 	font-family: Raleway;
+	font-size: 0.95rem;
 	font-weight: 300;
 }
 
@@ -169,7 +181,7 @@ nav {
 .container {
 	/*Max-width so that container doesn't stretch too much*/
 	/*And to set set margin auto for centering horizontally*/
-	max-width: 1000px;
+	max-width: 1100px;
 	margin: auto;
 	height: 100%;
 	padding: 50px;
@@ -179,4 +191,37 @@ nav {
 	justify-content: center;
 	align-items: flex-start;
 	flex-direction: column;
+	/*Parent font size = 2.5 * 16 (root) = 40px*/
+	font-size: 2.5rem;
+}
+
+.container h3 {
+	color: #64FFDA;
+	font-size: 1em;
+	margin-bottom: 0px;
+		font-weight: 200;
+
+}
+
+.container h1 {
+	color: #FFB13C;
+	font-size: 1.8em;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.container h5 {
+	color: #FFFFFF;
+	font-size: 0.65em;
+	margin-top: 75px;
+	/*Fix fonts and font weightss*/
+	font-weight: 200;
+}
+
+#coke {
+	color: #FF4A22;
+}
+
+#code {
+	color: #64FFDA;
 }
