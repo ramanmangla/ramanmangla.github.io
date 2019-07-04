@@ -136,13 +136,15 @@ header {
 
 nav {
 	display: flex;
+	/*Main axis*/
 	justify-content: space-between;
+	/*Align items acts on the cross axis*/
 	align-items: center;
 	width: 100%;
 }
 
 #logo {
-	height: 35px;
+	/*height: 35px;*/
 	/*Left Margin = a padding + right margin*/
 	margin: 25px;
 }
@@ -158,6 +160,23 @@ nav {
 
 .banner {
 	position: absolute;
+	width: 100%;
 	top: 0;
 	left: 0;
+	padding: 0 100px;
+}
+
+.container {
+	/*Max-width so that container doesn't stretch too much*/
+	/*And to set set margin auto for centering horizontally*/
+	max-width: 1000px;
+	margin: auto;
+	height: 100%;
+	padding: 50px;
+	/*Flex box to vertically center text div*/
+	/*And left align the content*/
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
 }
