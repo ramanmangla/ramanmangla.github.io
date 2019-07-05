@@ -95,6 +95,13 @@ h1, h2, h3, h4, h5, h6 {
 		Base Properties
 *******************************/
 
+html {
+	/* FLuid typography scaling over responsive*/
+	/* Max root sixe = 16px, min root size = 10px*/
+	/* Max viewport width = 1600px, min width = 300px*/
+	font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
 body {
 	/*Overscroll-behavior eliminates scroll bounce*/
 	/*overscroll-behavior: none;*/
@@ -103,28 +110,28 @@ body {
 }
 
 a {
-	color: #64FFDA;
+	color: inherit;
 	text-decoration: none;
 	transition: 0.5s ease;
 	font: inherit;
 }
 
 a:visited{
-	color: #64FFDA;
+	color: inherit;
 }
 
 a:hover {
-	color: #FFB13C;
+	color: #FFFFFF !important;
 }
 
 .page {
 	width: 100%;
 	height: 100vh;
 	background: #0D1F3A;
-	color: #FFFFFF;
 	font-family: "Raleway";
 	font-size: 0.95rem;
 	font-weight: 200;
+	color: #FFFFFF;
 	padding: 0 100px;
 	position: relative;
 }
@@ -144,7 +151,6 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #64FFDA;
 	font-family: "Raleway";
 	font-size: 0.95rem;
 	font-weight: 300;
@@ -170,6 +176,7 @@ nav {
 .navLinks a {
 	padding: 5px 15px;
 	margin: 10px;
+	color: #47CFF9;
 }
 
 /******************************
@@ -244,12 +251,13 @@ nav {
 
 .bannerContent a {
 	display: inline-block;
-	padding: 10px;
+	padding: 15px;
 	font-family: "Roboto Mono";
 	font-size: 0.33em;
 	font-weight: 100;
 	border: 1px solid #64FFDA;
 	border-radius: 4px;
+	color: #64FFDA;
 }
 
 /******************************
