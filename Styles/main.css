@@ -15,7 +15,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+menu, nav, output, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -99,6 +99,7 @@ body {
 	/*Overscroll-behavior eliminates scroll bounce*/
 	/*overscroll-behavior: none;*/
 	background: #0D1F3A;
+	margin: 0;
 }
 
 a {
@@ -124,6 +125,8 @@ a:hover {
 	font-family: "Raleway";
 	font-size: 0.95rem;
 	font-weight: 200;
+	padding: 0 100px;
+	position: relative;
 }
 
 /******************************
@@ -145,6 +148,7 @@ header {
 	font-family: "Raleway";
 	font-size: 0.95rem;
 	font-weight: 300;
+	background: #0D1F3A;
 	/*box-shadow: 0px -4px 7px 3px #111111;*/
 }
 
@@ -172,13 +176,13 @@ nav {
 			Banner
 *******************************/
 
-.banner {
+/*.banner {
 	position: absolute;
 	width: 100%;
 	top: 0;
 	left: 0;
 	padding: 0 100px;
-}
+}*/
 
 .container {
 	/*Max-width so that container doesn't stretch too much*/
@@ -195,6 +199,10 @@ nav {
 	flex-direction: column;
 	/*Parent font size = 2.5 * 16 (root) = 40px*/
 	font-size: 2.5rem;
+}
+
+.bannerContent {
+	padding-top: 30px;
 }
 
 .bannerContent h1,
@@ -228,16 +236,22 @@ nav {
 	color: #47CFF9;
 }
 
+.bannerContent div {
+	margin-top: 0.85em;
+	display: flex;
+	justify-content: center;
+}
+
 .bannerContent a {
 	display: inline-block;
-	position: relative;
-	top: 1.8em;
-	left: 50%;
-	transform: translateX(-50%);
 	padding: 10px;
 	font-family: "Roboto Mono";
-	font-size: 0.35em;
+	font-size: 0.33em;
 	font-weight: 100;
 	border: 1px solid #64FFDA;
 	border-radius: 4px;
 }
+
+/******************************
+		About Page
+*******************************/
