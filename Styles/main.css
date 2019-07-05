@@ -59,14 +59,14 @@ table {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
+	font: inherit;
 }
 
 /******************************
 			Fonts
 *******************************/
 
-@font-face {
+/*@font-face {
     font-family: "Raleway";
     src: url('../Static/Fonts/Raleway-SemiBold.woff2') format('woff2'),
         url('../Static/Fonts/Raleway-SemiBold.woff') format('woff'),
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
     src: url('../Static/Fonts/Raleway-ExtraLight.ttf') format('ttf');
     font-weight: 200;
     font-style: normal;
-}
+}*/
 
 /******************************
 		Base Properties
@@ -102,9 +102,10 @@ body {
 }
 
 a {
-	color: inherit;
+	color: #64FFDA;
 	text-decoration: none;
 	transition: 0.5s ease;
+	font: inherit;
 }
 
 a:visited{
@@ -190,35 +191,53 @@ nav {
 	/*And left align the content*/
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	flex-direction: column;
 	/*Parent font size = 2.5 * 16 (root) = 40px*/
 	font-size: 2.5rem;
 }
 
-.container h3 {
+.bannerContent h1,
+.bannerContent h2,
+.bannerContent h3,
+.bannerContent h6 {
+	text-align: center;
+	margin: 0;
+}
+
+
+.bannerContent h6,
+.bannerContent h3 {
 	color: #64FFDA;
-	font-size: 1em;
-	margin-bottom: 0px;
+	font-family: "Roboto Mono";
+	font-size: 0.8em;
+	font-weight: 100;
+	margin-top: 0.52em;
 }
 
-.container h1 {
-	color: #FFB13C;
-	font-size: 1.8em;
-	font-weight: 600;
-	margin-top: 10px;
+.bannerContent h1 {
+	font-family: "Overpass";
+	font-size: 1.5em;
+	font-weight: 200;
+	margin-top: 0.18em;
 }
 
-.container h5 {
-	color: #FFFFFF;
+.bannerContent h2 {
 	font-size: 0.65em;
-	margin-top: 75px;
+	margin-top: 1.45em;
+	color: #47CFF9;
 }
 
-#coke {
-	color: #FF4A22;
-}
-
-#code {
-	color: #64FFDA;
+.bannerContent a {
+	display: inline-block;
+	position: relative;
+	top: 1.8em;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 10px;
+	font-family: "Roboto Mono";
+	font-size: 0.35em;
+	font-weight: 100;
+	border: 1px solid #64FFDA;
+	border-radius: 4px;
 }
