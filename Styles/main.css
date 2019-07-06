@@ -99,6 +99,7 @@ body {
   /*overscroll-behavior: none;*/
   background: #0D1F3A;
   margin: 0;
+  overflow: hidden;
 }
 
 a {
@@ -144,6 +145,45 @@ a:hover {
   flex-direction: column;
   /*Parent font size = 2.5 * 16 (root) = 40px*/
   font-size: 2.5rem;
+}
+
+/******************************
+		Load Screen
+*******************************/
+@keyframes loaderBar {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 60px;
+  }
+  75% {
+    left: -60px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: #09172C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader div {
+  position: relative;
+  width: 50px;
+  height: 5px;
+  background: #64FFDA;
+  animation-name: loaderBar;
+  animation-duration: 3s;
 }
 
 /******************************
@@ -227,61 +267,6 @@ nav {
   border: 1px solid #64FFDA;
   border-radius: 4px;
   color: #64FFDA;
-}
-
-/******************************
-		About Page
-*******************************/
-@keyframes loaderBar {
-  0% {
-    left: 0;
-  }
-  25% {
-    left: 60px;
-  }
-  75% {
-    left: -60px;
-  }
-  100% {
-    left: 0;
-  }
-}
-@keyframes loaderScreen {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.loader {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  background: #09172C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  animation-name: loaderScreen;
-  animation-duration: 1.5s;
-  animation-delay: 3s;
-}
-
-.hideLoader {
-  display: none;
-}
-
-.loader div {
-  position: relative;
-  width: 50px;
-  height: 5px;
-  background: #64FFDA;
-  animation-name: loaderBar;
-  animation-duration: 3s;
 }
 
 /*# sourceMappingURL=main.css.map */
