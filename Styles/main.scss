@@ -34,6 +34,7 @@ $color-background: #0D1F3A;
 $color-headline: #47CFF9;
 $color-text: #64FFDA;
 $color-heading: #FFFFFF;
+$color-loading: #09172C;
 
 /******************************
 		Base Properties
@@ -78,6 +79,24 @@ a:hover {
 	color: $color-heading;
 	padding: 0 100px;
 	position: relative;
+}
+
+.container {
+	/*Max-width so that container doesn't stretch too much*/
+	/*And to set set margin auto for centering horizontally*/
+	max-width: 1100px;
+	min-height: 100vh;
+	margin: auto;
+	height: 100%;
+	padding: 50px;
+	/*Flex box to vertically center text div*/
+	/*And left align the content*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/*Parent font size = 2.5 * 16 (root) = 40px*/
+	font-size: 2.5rem;
 }
 
 /******************************
@@ -129,26 +148,7 @@ nav {
 			Banner
 *******************************/
 
-.container {
-	/*Max-width so that container doesn't stretch too much*/
-	/*And to set set margin auto for centering horizontally*/
-	max-width: 1100px;
-	min-height: 100vh;
-	margin: auto;
-	height: 100%;
-	padding: 50px;
-	/*Flex box to vertically center text div*/
-	/*And left align the content*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	/*Parent font size = 2.5 * 16 (root) = 40px*/
-	font-size: 2.5rem;
-}
-
 .bannerContent {
-	padding-top: 30px;
 
 	h1, h2, h3, h6 {
 		text-align: center;
@@ -188,12 +188,72 @@ nav {
 		font-family: "Roboto Mono";
 		font-size: 0.33em;
 		font-weight: 100;
-		border: 1px solid #64FFDA;
+		border: 1px solid $color-text;
 		border-radius: 4px;
-		color: #64FFDA;
+		color: $color-text;
 	}
 }
 
 /******************************
 		About Page
 *******************************/
+
+@keyframes loaderBar {
+  0% {
+  	left: 0;
+  }
+  
+  25% {
+  	left: 60px;
+  }
+
+  75% {
+  	left: -60px;
+  }
+
+  100% {
+  	left: 0;
+  }
+}
+
+@keyframes loaderScreen {
+  0% {
+  	opacity: 1;
+  }
+  
+  100% {
+  	opacity: 0;
+  }
+}
+
+.loader {
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background: $color-loading;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	animation-name: loaderScreen;
+	animation-duration: 1.5s;
+	animation-delay: 3s;
+}
+
+.hideLoader {
+	display: none;
+}
+
+.loader {
+	div {
+		position: relative;
+		width: 50px;
+		height: 5px;
+		background: $color-text;
+		animation-name: loaderBar;
+		animation-duration: 3s; 
+	}
+}
