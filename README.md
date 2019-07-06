@@ -3,4 +3,4 @@ Personal Portfolio Website
 ## Stack used:
   * HTML
   * (S)CSS
-  * JavaScipt (& jQuery)
+  * JavaScript (& jQuery)
