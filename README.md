@@ -1,7 +1,11 @@
 # WebsiteV1
 Personal Portfolio Website
 www.ramanmangla.com
-## Stack used:
+## Tech Stack:
   * HTML
   * (S)CSS
   * JavaScript (& jQuery)
+  
+## Design Tools:
+  * Figma
+  * Adobe Illustrator
