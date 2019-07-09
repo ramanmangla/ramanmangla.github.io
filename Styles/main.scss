@@ -40,6 +40,7 @@ $color-headline: #47CFF9;
 $color-text: #64FFDA;
 $color-heading: #FFFFFF;
 $color-loading: #09172C;
+$color-highlight: #FFFFFF;
 
 /******************************
 		Base Properties
@@ -94,7 +95,7 @@ a:hover {
 	min-height: 100vh;
 	margin: auto;
 	height: 100%;
-	padding: 50px;
+	padding: 140px;
 	/*Flex box to vertically center text div*/
 	/*And left align the content*/
 	display: flex;
@@ -103,8 +104,43 @@ a:hover {
 	flex-direction: column;
 	/*Parent font size = 2.5 * 16 (root) = 40px*/
 	font-size: 2.5rem;
+
+	> h2 {
+		width: 100%;
+		margin-top: 0.25em;
+		margin-bottom: 1.5em;
+		font-size: 0.75em;
+		font-weight: 500;
+	}
 }
 
+.contentContainer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	p {
+		font-size: 0.47em;
+		color: $color-text;
+		line-height: 1.25em;
+		margin-bottom: 20px;
+	}
+
+	h4 {
+		font-size: 0.47em;
+		font-weight: 300;
+	}
+}
+
+.leftColumn {
+	width: 60%;
+	max-width: 480px;
+}
+
+.highlight {
+	color: $color-highlight;
+}
 /******************************
 		Load Screen
 *******************************/
@@ -259,3 +295,34 @@ nav {
 	}
 }
 
+/******************************
+			About
+*******************************/
+
+#About {
+	ul {
+		width: 90%;
+		margin-top: 10px;
+		font-size: 0.38em;
+		color: $color-text;
+		display: flex;
+		justify-content: space-between;
+		align-items:flex-start;
+
+		li {
+			margin-bottom: 5px;
+		}
+
+		li:before{
+			content: "> ";
+			color: $color-heading;
+		}
+	}
+}
+
+#image {
+	width: 200px;
+	margin-top: 0px;
+	height: 250px;
+	border: 1px solid $color-text;
+}

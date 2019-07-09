@@ -136,7 +136,7 @@ a:hover {
   min-height: 100vh;
   margin: auto;
   height: 100%;
-  padding: 50px;
+  padding: 140px;
   /*Flex box to vertically center text div*/
   /*And left align the content*/
   display: flex;
@@ -145,6 +145,39 @@ a:hover {
   flex-direction: column;
   /*Parent font size = 2.5 * 16 (root) = 40px*/
   font-size: 2.5rem;
+}
+.container > h2 {
+  width: 100%;
+  margin-top: 0.25em;
+  margin-bottom: 1.5em;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+.contentContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contentContainer p {
+  font-size: 0.47em;
+  color: #64FFDA;
+  line-height: 1.25em;
+  margin-bottom: 20px;
+}
+.contentContainer h4 {
+  font-size: 0.47em;
+  font-weight: 300;
+}
+
+.leftColumn {
+  width: 60%;
+  max-width: 480px;
+}
+
+.highlight {
+  color: #FFFFFF;
 }
 
 /******************************
@@ -267,6 +300,33 @@ nav {
   border: 1px solid #64FFDA;
   border-radius: 4px;
   color: #64FFDA;
+}
+
+/******************************
+			About
+*******************************/
+#About ul {
+  width: 90%;
+  margin-top: 10px;
+  font-size: 0.38em;
+  color: #64FFDA;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#About ul li {
+  margin-bottom: 5px;
+}
+#About ul li:before {
+  content: "> ";
+  color: #FFFFFF;
+}
+
+#image {
+  width: 200px;
+  margin-top: 0px;
+  height: 250px;
+  border: 1px solid #64FFDA;
 }
 
 /*# sourceMappingURL=main.css.map */
