@@ -18,12 +18,20 @@ $(document).ready(function() {
 	});
 });
 
-// Smooth transition to next page and header drop shadow
+// Smooth transition to next page
 // when navigation link is clicked
-$('#AboutLink').click(function() {
-	$('header').css('box-shadow', '0px -8px 10px 3px #111111');
+$('nav a').click(function(e) {
+	var targetHref = $(this).attr('href');
 
-    $('html,body').animate({
-        scrollTop: $("#About").offset().top
-    }, 1000);
+	$('html, body').animate({
+		scrollTop: $(targetHref).offset().top
+	}, 1000);
+
+	e.preventDefault();
 });
+
+// $('#AboutLink').click(function() {
+//     $('html,body').animate({
+//         scrollTop: $("#About").offset().top
+//     }, 1000);
+// });
