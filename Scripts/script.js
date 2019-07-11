@@ -20,11 +20,21 @@ $(document).ready(function() {
 
 // Smooth transition to next page
 // when navigation link is clicked
-$('nav a').click(function(e) {
+$('header nav a').click(function(e) {
 	var targetHref = $(this).attr('href');
 
 	$('html, body').animate({
 		scrollTop: $(targetHref).offset().top
+	}, 1000);
+
+	e.preventDefault();
+});
+
+$('.experiences nav a').click(function(e) {
+	var targetHref = $(this).attr('href');
+
+	$('.experiences > div').animate({
+		scrollLeft: $(targetHref).offset().left
 	}, 1000);
 
 	e.preventDefault();

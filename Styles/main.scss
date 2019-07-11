@@ -116,6 +116,7 @@ a:hover {
 
 .contentContainer {
 	width: 100%;
+	min-height: 360px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -125,11 +126,6 @@ a:hover {
 		color: $color-text;
 		line-height: 1.25em;
 		margin-bottom: 20px;
-	}
-
-	h4 {
-		font-size: 0.47em;
-		font-weight: 300;
 	}
 }
 
@@ -222,7 +218,7 @@ header {
 	/*box-shadow: 0px -4px 7px 3px #111111;*/
 }
 
-nav {
+header > nav {
 	display: flex;
 	/*Main axis*/
 	justify-content: space-between;
@@ -317,6 +313,11 @@ nav {
 			content: "> ";
 			color: $color-heading;
 		}
+
+		h4 {
+		font-size: 0.47em;
+		font-weight: 300;
+		}
 	}
 }
 
@@ -325,4 +326,63 @@ nav {
 	margin-top: 0px;
 	height: 250px;
 	border: 1px solid $color-text;
+}
+
+/******************************
+		Experiences
+*******************************/
+
+.experiences {
+	display: block;
+	border: 1px solid #112C4C;
+
+	nav {
+
+		width: 100%;
+		font-size: 0.45em; 
+		color: $color-headline;
+		border-bottom: 1px solid #112C4C;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+
+		a {
+			padding: 15px 15px;
+		}
+	}
+
+	> div {
+		width: 100%;
+		display: flex;
+		overflow-y: hidden;
+		overflow-x: scroll;
+	}
+
+	.description {
+		min-width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 50px;
+	}
+
+	h3, h4, h5 {
+		font-size: 0.6em;
+	}
+
+	ul {
+		font-size: 0.4em;
+		color: $color-text;
+		line-height: 1.5em;
+		margin-top: 20px;
+
+		li {
+			margin-bottom: 7px;
+		}
+
+		li:before{
+			content: "> ";
+			color: $color-heading;
+		}
+	}
 }
