@@ -1,6 +1,21 @@
 
-@media screen and (max-width: 750px) {
-  .leftColumn {
-  	width: 100%;
+@media screen and (max-width: 900px) {
+  .navLinks {
+  	position: fixed;
+  	width: 200px;
+  	height: 100vh;
+  	right: -200px;
+  	top: 0px;
+  	background: #111;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: flex-start;
+  	align-items: center;
+  	transition: 0.5s ease;
+  	padding-top: 50px;
+  }
+
+  #navIcon {
+  	display: block;
   }
 }

@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 // Smooth transition to next page
 // when navigation link is clicked
-$('header nav a').click(function(e) {
+$('header nav a').on('click', function(e) {
 	var targetHref = $(this).attr('href');
 
 	$('html, body').animate({
@@ -30,7 +30,7 @@ $('header nav a').click(function(e) {
 	e.preventDefault();
 });
 
-$('.experiences nav a').click(function(e) {
+$('.experiences nav a').on('click', function(e) {
 	var targetHref = $(this).attr('href');
 
 	$('.experiences > div').animate({
@@ -45,3 +45,14 @@ $('.experiences nav a').click(function(e) {
 //         scrollTop: $("#About").offset().top
 //     }, 1000);
 // });
+
+// Responsive navigation
+$('#navIcon').on('click', function() {
+	$('.navLinks').css('right', 0);
+	$('body').css('background', 'rgba(0,0,0,0.4)');
+
+	$('.navLinks a').on('click', function(){
+		$('.navLinks').css('right', '-200px');
+	});
+
+});
