@@ -49,10 +49,19 @@ $('.experiences nav a').on('click', function(e) {
 // Responsive navigation
 $('#navIcon').on('click', function() {
 	$('.navLinks').css('right', 0);
-	$('body').css('background', 'rgba(0,0,0,0.4)');
 
 	$('.navLinks a').on('click', function(){
 		$('.navLinks').css('right', '-200px');
 	});
 
+	$(window).resize(function() {
+  		$('.navLinks').css('right', '-200px');
+	});
+
+	$(document).mouseup(function(e){
+		var menu = $('.navLinks');
+	    if (!menu.is(e.target) && menu.has(e.target).length === 0) {
+     		menu.css('right', '-200px');
+   		}
+	});
 });
