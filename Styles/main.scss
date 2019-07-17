@@ -85,14 +85,14 @@ a:hover {
 	font-size: 0.95rem;
 	font-weight: 200;
 	color: $color-heading;
-	padding: 10px;
+	padding: 0px 40px;
 	position: relative;
 }
 
 .container {
 	/*Max-width so that container doesn't stretch too much*/
 	/*And to set set margin auto for centering horizontally*/
-	max-width: 1100px;
+	max-width: 800px;
 	min-height: 100vh;
 	width: 90%;
 	margin: auto;
@@ -293,7 +293,7 @@ header > nav {
 		padding: 15px;
 		font-family: "Roboto Mono";
 		font-size: 0.33em;
-		font-weight: 100;
+		font-weight: 300;
 		border: 1px solid $color-text;
 		border-radius: 4px;
 		color: $color-text;
@@ -334,6 +334,7 @@ header > nav {
 #image {
 	width: 200px;
 	margin-top: 0px;
+	margin-left: 50px;
 	height: 250px;
 	border: 1px solid $color-text;
 }
