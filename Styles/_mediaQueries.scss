@@ -26,4 +26,25 @@
     .leftColumn {
         width: 100%;
     }
+
+    .description {
+        padding: 17px;
+
+        h3 {
+            font-size: 0.55em;
+        }
+
+        h4 {
+            font-size: 0.51em;
+        }
+
+        h5 {
+            font-size: 0.43em;
+        }
+
+        li {
+            font-size: 1.2em;
+        }
+    }
+
 }
