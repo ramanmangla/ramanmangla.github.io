@@ -89,9 +89,9 @@ h1, h2, h3, h4, h5, h6 {
 *******************************/
 html {
   /* Fluid typography scaling over responsive*/
-  /* Max root size = 16px, min root size = 10px*/
+  /* Max root size = 16px, min root size = 13px*/
   /* Max viewport width = 1600px, min width = 300px*/
-  font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1600 - 300)));
 }
 
 body {
@@ -156,11 +156,13 @@ a:hover {
 }
 
 .contentContainer {
+  position: relative;
   width: 100%;
   min-height: 400px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  border-bottom: 1px solid #FFFFFF;
 }
 .contentContainer p {
   font-size: 0.47em;
@@ -329,8 +331,8 @@ header > nav {
   content: "> ";
   color: #FFFFFF;
 }
-#About ul h4 {
-  font-size: 0.47em;
+#About h4 {
+  font-size: 0.48em;
   font-weight: 300;
 }
 
@@ -449,6 +451,11 @@ header > nav {
   }
   .description li {
     font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0 30px;
   }
 }
 
