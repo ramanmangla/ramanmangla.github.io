@@ -52,5 +52,10 @@
 @media screen and (max-width: 600px) {
   header {
     padding: 0 30px;
+    height: 60px;
+  }
+
+  .page {
+    font-weight: 300;
   }
 }
