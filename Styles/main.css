@@ -108,6 +108,8 @@ a {
   text-decoration: none;
   transition: 0.5s ease;
   font: inherit;
+  text-align: center;
+  line-height: 1.4em;
 }
 
 a:visited {
@@ -135,7 +137,7 @@ a:hover {
   /*And to set set margin auto for centering horizontally*/
   max-width: 900px;
   min-height: 100vh;
-  width: 90%;
+  width: 94%;
   margin: auto;
   height: 100%;
   /*Flex box to vertically center text div*/
@@ -377,7 +379,7 @@ header > nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 50px;
+  padding: 20px 50px;
 }
 .experiences h3 {
   font-size: 0.51em;
@@ -459,7 +461,7 @@ header > nav {
   }
 
   .experiences .description {
-    padding: 0px 7%;
+    padding: 20px 7%;
   }
 }
 

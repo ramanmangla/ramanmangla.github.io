@@ -30,12 +30,13 @@ $('header nav a').on('click', function(e) {
 	e.preventDefault();
 });
 
+// Experiences carousel
 $('.experiences nav a').on('click', function(e) {
 	var targetHref = $(this).attr('href');
 
 	$('.experiences > div').animate({
-		scrollLeft: $(targetHref).offset().left
-	}, 1000);
+		scrollLeft: $('.experiences > div').scrollLeft() + $(targetHref).position().left
+	}, 600);
 
 	e.preventDefault();
 });
