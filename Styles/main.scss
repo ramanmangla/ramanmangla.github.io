@@ -122,7 +122,7 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid #112C4C;
 
 	p {
 		font-size: 0.47em;
@@ -389,19 +389,23 @@ header > nav {
 	}
 
 	h4 {
-		margin-top: 0.2em;
+		margin-top: 0.27em;
 		font-family: "Overpass";
 		font-size: 0.48em;
+		font-weight: 200;
+		color: $color-headline;
 	}
 
 	h5 {
-		margin-top: 0.15em;
+		margin-top: 0.31em;
 		font-family: "Overpass";
-		font-size: 0.37em;
+		font-size: 0.35em;
+		font-weight: 200;
+		color: $color-headline;
 	}
 
 	ul {
-		font-size: 0.35em;
+		font-size: 0.42em;
 		color: $color-text;
 		line-height: 1.5em;
 		margin-top: 20px;
