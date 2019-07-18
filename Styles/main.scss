@@ -220,7 +220,7 @@ header {
 	font-size: 15px;
 	font-weight: 300;
 	background: $color-background;
-	/*box-shadow: 0px -4px 7px 3px #111111;*/
+	transition: 0.5s ease;
 }
 
 header > nav {
@@ -253,6 +253,14 @@ header > nav {
 		border-radius: 4px;
 		display: none;
 	}
+
+.hideHeader {
+	top: -100px;
+}
+
+.shadowHeader {
+	box-shadow: 0px -4px 14px -1px rgba(0,0,0,0.6);
+}
 
 /******************************
 		Media Links

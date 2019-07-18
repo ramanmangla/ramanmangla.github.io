@@ -16,6 +16,26 @@ $(document).ready(function() {
 			});
 		}, 2800);
 	});
+
+	var lastScroll = 0;
+
+	$(window).scroll(function() {
+
+		if($(window).scrollTop() > 150) {
+			$('header').addClass('shadowHeader');
+
+			if($(window).scrollTop() < lastScroll) {
+				$('header').removeClass('hideHeader');
+			} else {
+				$('header').addClass('hideHeader');
+			}
+		} else {
+			$('header').removeClass('shadowHeader');
+			$('header').removeClass('hideHeader');
+		}
+
+		lastScroll = $(window).scrollTop();
+	});
 });
 
 // Smooth transition to next page
