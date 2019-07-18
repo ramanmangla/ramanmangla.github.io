@@ -48,9 +48,9 @@ $color-highlight: #FFFFFF;
 
 html {
 	/* Fluid typography scaling over responsive*/
-	/* Max root size = 16px, min root size = 13px*/
-	/* Max viewport width = 1600px, min width = 300px*/
-	font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1600 - 300)));
+	/* Max root size = 16px, min root size = 12px*/
+	/* Max viewport width = 1600px, min width = 360px*/
+	font-size: calc(12px + (16 - 12) * ((100vw - 360px) / (1600 - 360)));
 }
 
 body {
@@ -96,7 +96,7 @@ a:hover {
 	/*And to set set margin auto for centering horizontally*/
 	max-width: 900px;
 	min-height: 100vh;
-	width: 94%;
+	width: 91%;
 	margin: auto;
 	height: 100%;
 	/*Flex box to vertically center text div*/
@@ -253,6 +253,32 @@ header > nav {
 		border-radius: 4px;
 		display: none;
 	}
+
+/******************************
+		Media Links
+*******************************/
+
+.mediaLinks {
+	position: fixed;
+	z-index: 20;
+	bottom: 0;
+	right: 4%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 80px;
+
+	> a {
+		display: inline-block;
+		padding: 10px 0;
+		width: 25px;
+
+		svg {
+			fill: #757E98;
+		}
+	}
+}
 
 /******************************
 			Banner
@@ -420,6 +446,24 @@ header > nav {
 			content: "> ";
 			color: $color-heading;
 		}
+	}
+}
+
+/******************************
+			Footer
+*******************************/
+
+footer {
+	width: 100%;
+	min-height: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #111111;
+
+	.personal {
+		color: #757E98;
 	}
 }
 
