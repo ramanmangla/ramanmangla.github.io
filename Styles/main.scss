@@ -142,6 +142,18 @@ a:hover {
 .highlight {
 	color: $color-highlight;
 }
+
+#image {
+	width: 200px;
+	margin-top: 0px;
+	margin-left: 50px;
+	height: 250px;
+	border: 1px solid $color-text;
+
+	img {
+		width: 100%;
+	}
+}
 /******************************
 		Load Screen
 *******************************/
@@ -236,6 +248,15 @@ header > nav {
 	/*height: 35px;*/
 	/*Left Margin = a padding + right margin*/
 	margin: 25px;
+
+	svg{
+		stroke: #00DCCF;
+		transition: 1s ease;
+
+		:hover {
+			stroke: #FFFFFF;
+		}
+	}
 }
 
 .navLinks {
@@ -273,17 +294,22 @@ header > nav {
 	right: 4%;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 80px;
 
 	> a {
 		display: inline-block;
-		padding: 10px 0;
+		margin: 10px 0;
 		width: 25px;
 
 		svg {
 			fill: #757E98;
+			transition: fill 1s;
+
+			:hover {
+				fill: #FFFFFF;
+			}
 		}
 	}
 }
@@ -366,14 +392,6 @@ header > nav {
 		font-size: 0.48em;
 		font-weight: 300;
 	}
-}
-
-#image {
-	width: 200px;
-	margin-top: 0px;
-	margin-left: 50px;
-	height: 250px;
-	border: 1px solid $color-text;
 }
 
 /******************************
@@ -469,6 +487,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	background: #111111;
+	padding: 15px;
 
 	.personal {
 		color: #757E98;

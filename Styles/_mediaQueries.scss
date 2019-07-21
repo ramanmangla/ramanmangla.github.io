@@ -73,7 +73,14 @@
       .mediaLinks {
         position: relative;
         flex-direction: row;
-        width: 200px;
+        width: 160px;
+        margin: 5px;
+        margin-bottom: 15px;
+        right: 0;
+
+        a {
+            margin: 0;
+        }
       }
     }
 }
