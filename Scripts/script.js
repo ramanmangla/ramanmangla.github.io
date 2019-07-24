@@ -42,9 +42,12 @@ $(document).ready(function() {
 // when navigation link is clicked
 $('header nav a').on('click', function(e) {
 	var targetHref = $(this).attr('href');
+	var offset = 0;
+
+	offset = targetHref == '#Projects'? -40:0;
 
 	$('html, body').animate({
-		scrollTop: $(targetHref).offset().top
+		scrollTop: $(targetHref).offset().top + offset
 	}, 1000);
 
 	e.preventDefault();
