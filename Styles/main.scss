@@ -81,14 +81,13 @@ a:hover {
 
 .page {
 	width: 100%;
-	height: 100vh;
-	min-height: 580px;
+	min-height: 100vh;
 	background: $color-background;
 	font-family: "Raleway";
 	font-size: 0.95rem;
 	font-weight: 200;
 	color: $color-heading;
-	padding: 0px 40px;
+	// padding: 0px 40px;
 	position: relative;
 }
 
@@ -97,9 +96,9 @@ a:hover {
 	/*And to set set margin auto for centering horizontally*/
 	max-width: 850px;
 	// min-height: 100vh;
-	width: 91%;
+	width: 83%;
 	margin: auto;
-	height: 100%;
+	height: 100vh;
 	/*Flex box to vertically center text div*/
 	/*And left align the content*/
 	display: flex;
@@ -438,7 +437,7 @@ header > nav {
 	}
 
 	h3 {
-		font-size: 0.51em;
+		font-size: 0.6em;
 		font-family: "Overpass";
 		font-weight: 200;
 	}
@@ -487,6 +486,69 @@ header > nav {
 }
 
 /******************************
+			Projects
+*******************************/
+
+#Projects {
+	.container {
+		min-height: 100vh;
+		height: 100%;
+		padding: 40px;
+	}
+
+	.contentContainer {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  		grid-gap: 0.7em;
+		// grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		justify-items: center;
+		align-items: center;
+		border: 0;
+	}
+}
+
+.project {
+	position: relative;
+	border: 1px solid #112C4C;
+	transition: 1s;
+	border: 1px solid $color-headline;
+
+	h3 {
+		font-size: 0.6em;
+		font-family: "Overpass";
+		color: $color-headline;
+	}
+
+	p {
+		font-size: 0.42em;
+		line-height: 1.4em;
+		margin-top: 1.7em;
+		text-align: justify;
+	}
+
+	> div {
+		width: 100%;
+		height: 100%;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.projOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+
+/******************************
 			Contact
 *******************************/
 
@@ -505,6 +567,8 @@ footer {
 	padding: 15px;
 
 	.personal {
+		font-family: "Roboto Mono";
+		font-weight: 300;
 		color: #757E98;
 	}
 }
