@@ -48,9 +48,9 @@ $color-highlight: #FFFFFF;
 
 html {
 	/* Fluid typography scaling over responsive*/
-	/* Max root size = 16px, min root size = 12px*/
+	/* Max root size = 16px, min root size = 14px*/
 	/* Max viewport width = 1600px, min width = 360px*/
-	font-size: calc(12px + (16 - 12) * ((100vw - 360px) / (1600 - 360)));
+	font-size: calc(14px + (16 - 14) * ((100vw - 360px) / (1600 - 360)));
 }
 
 body {
@@ -76,7 +76,7 @@ a:visited{
 }
 
 a:hover {
-	color: #FFFFFF !important;
+	color: #FFFFFF;
 }
 
 .page {
@@ -222,7 +222,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	padding: 0 60px;
 	z-index: 10;
 	display: flex;
@@ -400,9 +400,11 @@ header > nav {
 
 .experiences {
 	// display: block;
+	background: rgba(0, 0, 0, 0.15);
 	flex-direction: column;
 	justify-content: flex-start;
 	border: 1px solid #112C4C;
+	box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
 
 	nav {
 		width: 100%;
@@ -493,6 +495,20 @@ header > nav {
 	.container {
 		min-height: 100vh;
 		padding: 40px 0;
+
+		> p {
+			margin-top: 2.2em;
+			font-size: 0.5em;
+			color: $color-text;
+
+			a {
+				color: #FFFFFF;
+			}
+
+			a:hover {
+				color: $color-headline;
+			}
+		}
 	}
 
 	.contentContainer {
@@ -501,9 +517,10 @@ header > nav {
 		display: grid;
 	    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	    position: relative;
-	    gap: 40px 40px;
+	    gap: 30px 30px;
 	    border: 0;
 	}
+
 }
 
 .project {
@@ -518,35 +535,37 @@ header > nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
 
 	h3 {
 		font-size: 0.6em;
 		font-family: "Overpass";
-		color: $color-headline;
+		color: #FFFFFF;
 	}
 
 	ul {
-		width: 100%;
+		max-width: 80%;
 		margin-top: 0.4em;
-		display: flex;
+		display: flex;		
 		font-size: 0.35em;
+		color: $color-headline;
 
 		li {
-			margin-right: 0.4em;
+			margin-right: 1em;
 		}
 	}
 
 	p {
 		font-size: 0.4em;
-		line-height: 1.2em;
+		line-height: 1.4em;
 		margin-top: 1.7em;
-		text-align: justify;
+		text-align: left;
 	}
 
 	> div {
 		width: 100%;
-		height: 100%;
 	}
 
 	svg {
@@ -559,14 +578,13 @@ header > nav {
 	}
 }
 
-.projOverlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 4;
-	background: rgba(0, 0, 0, 0.5);
+.projectTech {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
-
 
 /******************************
 			Contact
