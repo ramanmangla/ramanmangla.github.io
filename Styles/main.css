@@ -487,20 +487,33 @@ header > nav {
   position: relative;
   border: 1px solid #112C4C;
   transition: 1s;
-  border: 1px solid #47CFF9;
   width: 100%;
   height: 300px;
   min-height: 200px;
   margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .project h3 {
   font-size: 0.6em;
   font-family: "Overpass";
   color: #47CFF9;
 }
+.project ul {
+  width: 100%;
+  margin-top: 0.4em;
+  display: flex;
+  font-size: 0.35em;
+}
+.project ul li {
+  margin-right: 0.4em;
+}
 .project p {
-  font-size: 0.42em;
-  line-height: 1.4em;
+  font-size: 0.4em;
+  line-height: 1.2em;
   margin-top: 1.7em;
   text-align: justify;
 }
@@ -508,10 +521,12 @@ header > nav {
   width: 100%;
   height: 100%;
 }
-.project img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.project svg {
+  fill: #757E98;
+  transition: fill 1s;
+}
+.project svg :hover {
+  fill: #FFFFFF;
 }
 
 .projOverlay {
