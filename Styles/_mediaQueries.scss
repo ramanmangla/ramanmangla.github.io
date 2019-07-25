@@ -31,6 +31,12 @@
         padding: 17px;
     }
 
+    #Projects {
+        .project {
+            width: 80%;
+        }
+    }
+
 }
 
 @media screen and (max-width: 620px) {
@@ -51,13 +57,6 @@
 
     .experiences .description {
         padding: 7%;
-    }
-
-    #Projects {
-        .contentContainer {
-            padding-left: 45px;
-            padding-right: 45px; 
-        }
     }
 
     footer {

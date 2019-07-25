@@ -98,7 +98,7 @@ a:hover {
 	// min-height: 100vh;
 	width: 83%;
 	margin: auto;
-	height: 100vh;
+	min-height: 100vh;
 	/*Flex box to vertically center text div*/
 	/*And left align the content*/
 	display: flex;
@@ -492,21 +492,17 @@ header > nav {
 #Projects {
 	.container {
 		min-height: 100vh;
-		height: 100%;
 		padding: 40px 0;
 	}
 
 	.contentContainer {
-		height: 100%;
 		width: 100%;
+		height: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  		grid-gap: 2em;
-		// grid-template-columns: repeat(2, 1fr);
-		// grid-template-rows: repeat(2, 1fr);
-		justify-items: center;
-		align-items: center;
-		border: 0;
+	    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	    position: relative;
+	    gap: 40px 40px;
+	    border: 0;
 	}
 }
 
@@ -516,8 +512,9 @@ header > nav {
 	transition: 1s;
 	border: 1px solid $color-headline;
 	width: 100%;
-	height: 100%;
+	height: 300px;
 	min-height: 200px;
+	margin: auto;
 
 	h3 {
 		font-size: 0.6em;

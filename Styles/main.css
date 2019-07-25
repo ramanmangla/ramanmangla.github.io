@@ -137,7 +137,7 @@ a:hover {
   max-width: 850px;
   width: 83%;
   margin: auto;
-  height: 100vh;
+  min-height: 100vh;
   /*Flex box to vertically center text div*/
   /*And left align the content*/
   display: flex;
@@ -471,17 +471,15 @@ header > nav {
 *******************************/
 #Projects .container {
   min-height: 100vh;
-  height: 100%;
   padding: 40px 0;
 }
 #Projects .contentContainer {
-  height: 100%;
   width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2em;
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  position: relative;
+  gap: 40px 40px;
   border: 0;
 }
 
@@ -491,8 +489,9 @@ header > nav {
   transition: 1s;
   border: 1px solid #47CFF9;
   width: 100%;
-  height: 100%;
+  height: 300px;
   min-height: 200px;
+  margin: auto;
 }
 .project h3 {
   font-size: 0.6em;
@@ -576,6 +575,10 @@ footer .personal {
   .description {
     padding: 17px;
   }
+
+  #Projects .project {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 620px) {
   header {
@@ -593,11 +596,6 @@ footer .personal {
 
   .experiences .description {
     padding: 7%;
-  }
-
-  #Projects .contentContainer {
-    padding-left: 45px;
-    padding-right: 45px;
   }
 
   footer .mediaLinks {
