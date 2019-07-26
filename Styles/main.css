@@ -495,6 +495,9 @@ header > nav {
   gap: 30px 30px;
   border: 0;
 }
+#Projects a {
+  line-height: 0;
+}
 
 .project {
   position: relative;
