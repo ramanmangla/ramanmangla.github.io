@@ -112,12 +112,12 @@ a {
   line-height: 1.4em;
 }
 
-a:visited {
-  color: inherit;
+a:hover {
+  color: #FFFFFF !important;
 }
 
-a:hover {
-  color: #FFFFFF;
+a:visited {
+  color: inherit;
 }
 
 .page {
@@ -480,11 +480,11 @@ header > nav {
   font-size: 0.5em;
   color: #64FFDA;
 }
-#Projects .container > p a {
+#Projects .container > p > a {
   color: #FFFFFF;
 }
-#Projects .container > p a:hover {
-  color: #47CFF9;
+#Projects .container > p > a:hover {
+  color: #47CFF9 !important;
 }
 #Projects .contentContainer {
   width: 100%;

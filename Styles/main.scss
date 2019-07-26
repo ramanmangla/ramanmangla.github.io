@@ -71,12 +71,12 @@ a {
 	line-height: 1.4em;
 }
 
-a:visited{
-	color: inherit;
+a:hover {
+	color: #FFFFFF !important;;
 }
 
-a:hover {
-	color: #FFFFFF;
+a:visited {
+	color: inherit;
 }
 
 .page {
@@ -501,12 +501,12 @@ header > nav {
 			font-size: 0.5em;
 			color: $color-text;
 
-			a {
+			> a {
 				color: #FFFFFF;
 			}
 
-			a:hover {
-				color: $color-headline;
+			> a:hover {
+				color: $color-headline !important;
 			}
 		}
 	}
