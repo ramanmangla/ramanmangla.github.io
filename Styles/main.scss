@@ -154,6 +154,11 @@ a:visited {
 		width: 100%;
 	}
 }
+
+.activeLink {
+	color: #FFFFFF
+}
+
 /******************************
 		Load Screen
 *******************************/
@@ -487,6 +492,10 @@ header > nav {
 	}
 }
 
+#activeExperience {
+	color: #FFFFFF;
+}
+
 /******************************
 			Projects
 *******************************/
@@ -597,13 +606,14 @@ header > nav {
 #Contact {
 	h3 {
 		// font-family: "Roboto Mono";
-		font-size: 0.5em !important;
+		font-size: 0.52em;
 		color: #FFFFFF;
 	}
 
 	h2 {
-		font-size: 1.2em;
+		font-size: 1.1em;
 		font-family: "Overpass";
+		font-weight: 200;
 		margin-top: 0.6em;
 	}
 

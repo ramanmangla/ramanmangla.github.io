@@ -191,6 +191,10 @@ a:visited {
   width: 100%;
 }
 
+.activeLink {
+  color: #FFFFFF;
+}
+
 /******************************
 		Load Screen
 *******************************/
@@ -468,6 +472,10 @@ header > nav {
   height: 200px;
 }
 
+#activeExperience {
+  color: #FFFFFF;
+}
+
 /******************************
 			Projects
 *******************************/
@@ -559,12 +567,13 @@ header > nav {
 			Contact
 *******************************/
 #Contact h3 {
-  font-size: 0.5em !important;
+  font-size: 0.52em;
   color: #FFFFFF;
 }
 #Contact h2 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: "Overpass";
+  font-weight: 200;
   margin-top: 0.6em;
 }
 #Contact .bannerContent div {
@@ -626,7 +635,7 @@ footer .personal {
 }
 @media screen and (max-width: 620px) {
   header {
-    padding: 0 20px;
+    padding: 0 25px;
     height: 60px;
   }
 
@@ -644,6 +653,10 @@ footer .personal {
 
   .experiences .description {
     padding: 7%;
+  }
+
+  .project {
+    height: 240px;
   }
 
   footer .mediaLinks {

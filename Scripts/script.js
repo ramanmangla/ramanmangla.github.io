@@ -55,13 +55,16 @@ $('header nav a').on('click', function(e) {
 
 // Experiences carousel
 $('.experiences nav a').on('click', function(e) {
+	e.preventDefault();
+
 	var targetHref = $(this).attr('href');
+
+	$('.experiences nav a').css('color', '#47CFF9');
+	$(this).css('color', '#FFFFFF');
 
 	$('.experiences > div').animate({
 		scrollLeft: $('.experiences > div').scrollLeft() + $(targetHref).position().left
 	}, 600);
-
-	e.preventDefault();
 });
 
 // $('#AboutLink').click(function() {
