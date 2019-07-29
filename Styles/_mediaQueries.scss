@@ -35,8 +35,12 @@
 
 @media screen and (max-width: 620px) {
     header {
-        padding: 0 30px;
+        padding: 0 20px;
         height: 60px;
+    }
+
+    #logo {
+        margin: 0;
     }
 
     .page {
