@@ -39,8 +39,6 @@ $sky-blue: #47cff9;
 $turquoise: #64ffda;
 $darker-blue: #09172c;
 $white: #ffffff;
-$midnight-blue: #112c4c;
-$grey: #757e98;
 
 $color-background: $dark-blue;
 $color-navlinks: $sky-blue;
@@ -48,9 +46,6 @@ $color-text: $white;
 $color-heading: $turquoise;
 $color-loading: $darker-blue;
 $color-highlight: $turquoise;
-$color-border: $midnight-blue;
-$color-medialinks: $grey;
-$color-bullets: $grey;
 
 /******************************
 		Base Properties
@@ -104,7 +99,7 @@ a:visited {
 .container {
   /*Max-width so that container doesn't stretch too much*/
   /*And to set set margin auto for centering horizontally*/
-  max-width: 900px;
+  max-width: 850px;
   // min-height: 100vh;
   width: 88%;
   margin: auto;
@@ -134,7 +129,7 @@ a:visited {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid #112c4c;
 
   p {
     font-size: 0.47em;
@@ -225,8 +220,7 @@ a:visited {
     height: 5px;
     background: $turquoise;
     animation-name: loaderBar;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
   }
 }
 
@@ -321,7 +315,7 @@ header > nav {
     width: 25px;
 
     svg {
-      fill: $color-medialinks;
+      fill: #757e98;
       transition: fill 1s;
 
       :hover {
@@ -392,7 +386,7 @@ header > nav {
 
 #About {
   ul {
-    width: 95%;
+    width: 90%;
     margin-top: 10px;
     font-size: 0.38em;
     color: $color-text;
@@ -401,28 +395,18 @@ header > nav {
     align-items: flex-start;
 
     li {
-      position: relative;
-      margin: 5px;
-      padding-left: 0.8em;
-      line-height: 1.2em;
+      margin-bottom: 5px;
     }
 
     li:before {
       content: "> ";
-      color: $color-bullets;
-      position: absolute;
-      left: 0;
-      top: 0;
+      color: $sky-blue;
     }
   }
 
   h4 {
     font-size: 0.48em;
     font-weight: 300;
-  }
-
-  .contentContainer {
-    padding-bottom: 0.5em;
   }
 }
 
@@ -435,21 +419,20 @@ header > nav {
   background: rgba(0, 0, 0, 0.15);
   flex-direction: column;
   justify-content: flex-start;
-  border: 1px solid $color-border;
+  border: 1px solid #112c4c;
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
 
   nav {
     width: 100%;
     font-size: 0.45em;
     color: $color-navlinks;
-    border-bottom: 1px solid $color-border;
+    border-bottom: 1px solid #112c4c;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
     a {
-      position: relative;
-      padding: 15px 10px;
+      padding: 15px 15px;
     }
   }
 
@@ -500,17 +483,12 @@ header > nav {
     margin-top: 20px;
 
     li {
-      position: relative;
       margin-bottom: 7px;
-      padding-left: 0.8em;
     }
 
     li:before {
       content: "> ";
-      color: $color-bullets;
-      position: absolute;
-      left: 0;
-      top: 0;
+      color: $color-heading;
     }
   }
 
@@ -525,20 +503,10 @@ header > nav {
   }
 }
 
-.activeExperience {
+#activeExperience {
   color: #ffffff;
-  //   border-bottom: 2px solid $turquoise;
 }
 
-.activeExperience:after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: $turquoise;
-}
 /******************************
 			Projects
 *******************************/
@@ -556,7 +524,7 @@ header > nav {
       line-height: 1.4em;
 
       > a {
-        color: $turquoise;
+        color: #ffffff;
       }
 
       > a:hover {
@@ -581,7 +549,7 @@ header > nav {
 
 .project {
   position: relative;
-  border: 1px solid $color-border;
+  border: 1px solid #112c4c;
   transition: 1s;
   width: 100%;
   height: 300px;
@@ -598,7 +566,7 @@ header > nav {
   h3 {
     font-size: 0.6em;
     font-family: "Overpass";
-    color: $color-heading;
+    color: #ffffff;
   }
 
   ul {
@@ -625,7 +593,7 @@ header > nav {
   }
 
   svg {
-    fill: $color-medialinks;
+    fill: #757e98;
     transition: fill 1s;
 
     :hover {
@@ -686,7 +654,7 @@ footer {
   .personal {
     font-family: "Roboto Mono";
     font-weight: 300;
-    color: $grey;
+    color: #757e98;
   }
 }
 

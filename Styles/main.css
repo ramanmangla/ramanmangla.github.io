@@ -219,7 +219,7 @@ a:visited {
 .container {
   /*Max-width so that container doesn't stretch too much*/
   /*And to set set margin auto for centering horizontally*/
-  max-width: 900px;
+  max-width: 850px;
   width: 88%;
   margin: auto;
   min-height: 100vh;
@@ -317,8 +317,7 @@ a:visited {
   height: 5px;
   background: #64ffda;
   animation-name: loaderBar;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
 }
 
 /******************************
@@ -464,7 +463,7 @@ header > nav {
 			About
 *******************************/
 #About ul {
-  width: 95%;
+  width: 90%;
   margin-top: 10px;
   font-size: 0.38em;
   color: #ffffff;
@@ -473,24 +472,15 @@ header > nav {
   align-items: flex-start;
 }
 #About ul li {
-  position: relative;
-  margin: 5px;
-  padding-left: 0.8em;
-  line-height: 1.2em;
+  margin-bottom: 5px;
 }
 #About ul li:before {
   content: "> ";
-  color: #757e98;
-  position: absolute;
-  left: 0;
-  top: 0;
+  color: #47cff9;
 }
 #About h4 {
   font-size: 0.48em;
   font-weight: 300;
-}
-#About .contentContainer {
-  padding-bottom: 0.5em;
 }
 
 /******************************
@@ -513,8 +503,7 @@ header > nav {
   align-items: center;
 }
 .experiences nav a {
-  position: relative;
-  padding: 15px 10px;
+  padding: 15px 15px;
 }
 .experiences > div {
   width: 100%;
@@ -558,16 +547,11 @@ header > nav {
   margin-top: 20px;
 }
 .experiences ul li {
-  position: relative;
   margin-bottom: 7px;
-  padding-left: 0.8em;
 }
 .experiences ul li:before {
   content: "> ";
-  color: #757e98;
-  position: absolute;
-  left: 0;
-  top: 0;
+  color: #64ffda;
 }
 .experiences .image {
   border: 0;
@@ -579,18 +563,8 @@ header > nav {
   height: 200px;
 }
 
-.activeExperience {
+#activeExperience {
   color: #ffffff;
-}
-
-.activeExperience:after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: #64ffda;
 }
 
 /******************************
@@ -608,7 +582,7 @@ header > nav {
   line-height: 1.4em;
 }
 #Projects .container > p > a {
-  color: #64ffda;
+  color: #ffffff;
 }
 #Projects .container > p > a:hover {
   color: #47cff9 !important;
@@ -644,7 +618,7 @@ header > nav {
 .project h3 {
   font-size: 0.6em;
   font-family: "Overpass";
-  color: #64ffda;
+  color: #ffffff;
 }
 .project ul {
   max-width: 80%;
@@ -733,7 +707,7 @@ footer .personal {
     align-items: center;
     transition: 0.5s ease;
     padding-top: 50px;
-    z-index: 15;
+    z-index: 20;
   }
 
   #navIcon {
