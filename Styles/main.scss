@@ -1,6 +1,5 @@
-
 // CSS Reset
-@import "reset";
+@import 'reset';
 
 /******************************
 			Fonts
@@ -35,128 +34,128 @@
 // 		SCSS Variables
 //******************************
 
-$color-background: #0D1F3A;
-$color-headline: #47CFF9;
-$color-text: #64FFDA;
-$color-heading: #FFFFFF;
-$color-loading: #09172C;
-$color-highlight: #FFFFFF;
+$color-background: #0d1f3a;
+$color-headline: #47cff9;
+$color-text: #64ffda;
+$color-heading: #ffffff;
+$color-loading: #09172c;
+$color-highlight: #ffffff;
 
 /******************************
 		Base Properties
 *******************************/
 
 html {
-	/* Fluid typography scaling over responsive*/
-	/* Max root size = 16px, min root size = 14px*/
-	/* Max viewport width = 1600px, min width = 360px*/
-	font-size: calc(14px + (16 - 14) * ((100vw - 360px) / (1600 - 360)));
+  /* Fluid typography scaling over responsive*/
+  /* Max root size = 16px, min root size = 14px*/
+  /* Max viewport width = 1600px, min width = 360px*/
+  font-size: calc(14px + (16 - 14) * ((100vw - 360px) / (1600 - 360)));
 }
 
 body {
-	/*Overscroll-behavior eliminates scroll bounce*/
-	/*overscroll-behavior: none;*/
-	background: $color-background;
-	margin: 0;
-	overflow: hidden;
-	transition: 1s ease;
+  /*Overscroll-behavior eliminates scroll bounce*/
+  /*overscroll-behavior: none;*/
+  background: $color-background;
+  margin: 0;
+  overflow: hidden;
+  transition: 1s ease;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
-	transition: 0.5s ease;
-	font: inherit;
-	text-align: center;
-	line-height: 1.4em;
+  color: inherit;
+  text-decoration: none;
+  transition: 0.5s ease;
+  font: inherit;
+  text-align: center;
+  line-height: 1.4em;
 }
 
 a:hover {
-	color: #FFFFFF !important;;
+  color: #ffffff !important;
 }
 
 a:visited {
-	color: inherit;
+  color: inherit;
 }
 
 .page {
-	width: 100%;
-	min-height: 100vh;
-	background: $color-background;
-	font-family: "Raleway";
-	font-size: 0.95rem;
-	font-weight: 200;
-	color: $color-heading;
-	// padding: 0px 40px;
-	position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: $color-background;
+  font-family: 'Raleway';
+  font-size: 0.95rem;
+  font-weight: 200;
+  color: $color-heading;
+  // padding: 0px 40px;
+  position: relative;
 }
 
 .container {
-	/*Max-width so that container doesn't stretch too much*/
-	/*And to set set margin auto for centering horizontally*/
-	max-width: 850px;
-	// min-height: 100vh;
-	width: 88%;
-	margin: auto;
-	min-height: 100vh;
-	/*Flex box to vertically center text div*/
-	/*And left align the content*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	/*Parent font size = 2.5 * 16 (root) = 40px*/
-	font-size: 2.5rem;
+  /*Max-width so that container doesn't stretch too much*/
+  /*And to set set margin auto for centering horizontally*/
+  max-width: 850px;
+  // min-height: 100vh;
+  width: 88%;
+  margin: auto;
+  min-height: 100vh;
+  /*Flex box to vertically center text div*/
+  /*And left align the content*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*Parent font size = 2.5 * 16 (root) = 40px*/
+  font-size: 2.5rem;
 
-	> h2 {
-		width: 100%;
-		margin-top: 0.25em;
-		margin-bottom: 1.5em;
-		font-size: 0.75em;
-		font-weight: 500;
-	}
+  > h2 {
+    width: 100%;
+    margin-top: 0.25em;
+    margin-bottom: 1.5em;
+    font-size: 0.75em;
+    font-weight: 500;
+  }
 }
 
 .contentContainer {
-	position: relative;
-	width: 100%;
-	min-height: 400px;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	border-bottom: 1px solid #112C4C;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #112c4c;
 
-	p {
-		font-size: 0.47em;
-		color: $color-text;
-		line-height: 1.25em;
-		margin-bottom: 20px;
-	}
+  p {
+    font-size: 0.47em;
+    color: $color-text;
+    line-height: 1.25em;
+    margin-bottom: 20px;
+  }
 }
 
 .leftColumn {
-	width: 60%;
-	max-width: 480px;
+  width: 60%;
+  max-width: 480px;
 }
 
 .highlight {
-	color: $color-highlight;
+  color: $color-highlight;
 }
 
-#image {
-	width: 200px;
-	margin-top: 0px;
-	margin-left: 50px;
-	height: 250px;
-	border: 1px solid $color-text;
+.image {
+  width: 200px;
+  margin-top: 0px;
+  margin-left: 50px;
+  height: 250px;
+  border: 1px solid $color-text;
 
-	img {
-		width: 100%;
-	}
+  img {
+    width: 100%;
+  }
 }
 
 .activeLink {
-	color: #FFFFFF
+  color: #ffffff;
 }
 
 /******************************
@@ -165,19 +164,19 @@ a:visited {
 
 @keyframes loaderBar {
   0% {
-  	left: 0;
+    left: 0;
   }
-  
+
   25% {
-  	left: 60px;
+    left: 60px;
   }
 
   75% {
-  	left: -60px;
+    left: -60px;
   }
 
   100% {
-  	left: 0;
+    left: 0;
   }
 }
 
@@ -185,37 +184,38 @@ a:visited {
 //   0% {
 //   	opacity: 1;
 //   }
-  
+
 //   100% {
 //   	opacity: 0;
 //   }
 // }
 
 .loader {
-	position: fixed;
-	height: 100vh;
-	width: 100%;
-	z-index: 100;
-	top: 0;
-	left: 0;
-	background: $color-loading;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	// animation-name: loaderScreen;
-	// animation-duration: 0.6s;
-	// animation-delay: 3s;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: $color-loading;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // animation-name: loaderScreen;
+  // animation-duration: 0.6s;
+  // animation-delay: 3s;
 }
 
 .loader {
-	div {
-		position: relative;
-		width: 50px;
-		height: 5px;
-		background: $color-text;
-		animation-name: loaderBar;
-		animation-duration: 3s; 
-	}
+  div {
+    position: relative;
+    width: 50px;
+    height: 5px;
+    background: $color-text;
+    animation-name: loaderBar;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+  }
 }
 
 /******************************
@@ -223,69 +223,69 @@ a:visited {
 *******************************/
 
 header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 80px;
-	padding: 0 60px;
-	z-index: 10;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: "Raleway";
-	font-size: 15px;
-	font-weight: 300;
-	background: $color-background;
-	transition: 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 60px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway';
+  font-size: 15px;
+  font-weight: 300;
+  background: $color-background;
+  transition: 0.5s ease;
 }
 
 header > nav {
-	display: flex;
-	/*Main axis*/
-	justify-content: space-between;
-	/*Align items acts on the cross axis*/
-	align-items: center;
-	width: 100%;
+  display: flex;
+  /*Main axis*/
+  justify-content: space-between;
+  /*Align items acts on the cross axis*/
+  align-items: center;
+  width: 100%;
 }
 
 #logo {
-	/*height: 35px;*/
-	/*Left Margin = a padding + right margin*/
-	margin-left: 25px;
+  /*height: 35px;*/
+  /*Left Margin = a padding + right margin*/
+  margin-left: 25px;
 
-	svg{
-		stroke: #00DCCF;
-		transition: 1s ease;
+  svg {
+    stroke: #00dccf;
+    transition: 1s ease;
 
-		:hover {
-			stroke: #FFFFFF;
-		}
-	}
+    :hover {
+      stroke: #ffffff;
+    }
+  }
 }
 
 .navLinks {
-	a {
-		padding: 5px 15px;
-		margin: 10px;
-		color: $color-headline;
-	}
+  a {
+    padding: 5px 15px;
+    margin: 10px;
+    color: $color-headline;
+  }
 }
 
 #navIcon {
-		width: 25px;
-		padding: 3px;
-		background: #FFFFFF;
-		border-radius: 4px;
-		display: none;
-	}
+  width: 25px;
+  padding: 3px;
+  background: #ffffff;
+  border-radius: 4px;
+  display: none;
+}
 
 .hideHeader {
-	top: -100px;
+  top: -100px;
 }
 
 .shadowHeader {
-	box-shadow: 0px -4px 14px -1px rgba(0,0,0,0.6);
+  box-shadow: 0px -4px 14px -1px rgba(0, 0, 0, 0.6);
 }
 
 /******************************
@@ -293,30 +293,30 @@ header > nav {
 *******************************/
 
 .mediaLinks {
-	position: fixed;
-	z-index: 20;
-	bottom: 0;
-	right: 4%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 80px;
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
+  right: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
 
-	> a {
-		display: inline-block;
-		margin: 10px 0;
-		width: 25px;
+  > a {
+    display: inline-block;
+    margin: 10px 0;
+    width: 25px;
 
-		svg {
-			fill: #757E98;
-			transition: fill 1s;
+    svg {
+      fill: #757e98;
+      transition: fill 1s;
 
-			:hover {
-				fill: #FFFFFF;
-			}
-		}
-	}
+      :hover {
+        fill: #ffffff;
+      }
+    }
+  }
 }
 
 /******************************
@@ -324,49 +324,53 @@ header > nav {
 *******************************/
 
 .bannerContent {
-	h1, h2, h3, h6 {
-		text-align: center;
-		margin: 0;
-	}
+  h1,
+  h2,
+  h3,
+  h6 {
+    text-align: center;
+    margin: 0;
+  }
 
-	h6, h3 {
-		color: $color-text;
-		font-family: "Roboto Mono";
-		font-size: 0.8em;
-		font-weight: 100;
-		margin-top: 0.52em;
-	}
+  h6,
+  h3 {
+    color: $color-text;
+    font-family: 'Roboto Mono';
+    font-size: 0.8em;
+    font-weight: 100;
+    margin-top: 0.52em;
+  }
 
-	h1 {
-		font-family: "Overpass";
-		font-size: 1.5em;
-		font-weight: 200;
-		margin-top: 0.18em;
-	}
+  h1 {
+    font-family: 'Overpass';
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-top: 0.18em;
+  }
 
-	h2 {
-		font-size: 0.65em;
-		margin-top: 1.45em;
-		color: $color-headline;
-	}
+  h2 {
+    font-size: 0.65em;
+    margin-top: 1.45em;
+    color: $color-headline;
+  }
 
-	div {
-		margin-top: 0.85em;
-		display: flex;
-		justify-content: center;
-	}
+  div {
+    margin-top: 0.85em;
+    display: flex;
+    justify-content: center;
+  }
 
-	a {
-		display: inline-block;
-		padding: 15px;
-		font-family: "Roboto Mono";
-		font-size: 0.33em;
-		font-weight: 300;
-		border: 1px solid $color-text;
-		border-radius: 4px;
-		color: $color-text;
-		margin-bottom: 2.9em;
-	}
+  a {
+    display: inline-block;
+    padding: 15px;
+    font-family: 'Roboto Mono';
+    font-size: 0.33em;
+    font-weight: 300;
+    border: 1px solid $color-text;
+    border-radius: 4px;
+    color: $color-text;
+    margin-bottom: 2.9em;
+  }
 }
 
 /******************************
@@ -374,29 +378,29 @@ header > nav {
 *******************************/
 
 #About {
-	ul {
-		width: 90%;
-		margin-top: 10px;
-		font-size: 0.38em;
-		color: $color-text;
-		display: flex;
-		justify-content: space-between;
-		align-items:flex-start;
+  ul {
+    width: 95%;
+    margin-top: 10px;
+    font-size: 0.38em;
+    color: $color-text;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 
-		li {
-			margin-bottom: 5px;
-		}
+    li {
+      margin-bottom: 5px;
+    }
 
-		li:before{
-			content: "> ";
-			color: $color-heading;
-		}
-	}
+    li:before {
+      content: '> ';
+      color: $color-heading;
+    }
+  }
 
-	h4 {
-		font-size: 0.48em;
-		font-weight: 300;
-	}
+  h4 {
+    font-size: 0.48em;
+    font-weight: 300;
+  }
 }
 
 /******************************
@@ -404,96 +408,96 @@ header > nav {
 *******************************/
 
 .experiences {
-	// display: block;
-	background: rgba(0, 0, 0, 0.15);
-	flex-direction: column;
-	justify-content: flex-start;
-	border: 1px solid #112C4C;
-	box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
+  // display: block;
+  background: rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #112c4c;
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
 
-	nav {
-		width: 100%;
-		font-size: 0.45em; 
-		color: $color-headline;
-		border-bottom: 1px solid #112C4C;
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
+  nav {
+    width: 100%;
+    font-size: 0.45em;
+    color: $color-headline;
+    border-bottom: 1px solid #112c4c;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
-		a {
-			padding: 15px 15px;
-		}
-	}
+    a {
+      padding: 15px 15px;
+    }
+  }
 
-	> div {
-		width: 100%;
-		height: 100%;
-		flex-grow: 1;
-		display: flex;
-		align-items: center;
-		overflow-y: hidden;
-		overflow-x: hidden;
-	}
+  > div {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
 
-	.description {
-		min-width: 100%;
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
-		padding: 20px 50px;
-	}
+  .description {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 50px;
+  }
 
-	h3 {
-		font-size: 0.6em;
-		font-family: "Overpass";
-		font-weight: 200;
-	}
+  h3 {
+    font-size: 0.6em;
+    font-family: 'Overpass';
+    font-weight: 200;
+  }
 
-	h4 {
-		margin-top: 0.27em;
-		font-family: "Overpass";
-		font-size: 0.48em;
-		font-weight: 200;
-		color: $color-headline;
-	}
+  h4 {
+    margin-top: 0.27em;
+    font-family: 'Overpass';
+    font-size: 0.48em;
+    font-weight: 200;
+    color: $color-headline;
+  }
 
-	h5 {
-		margin-top: 0.31em;
-		font-family: "Overpass";
-		font-size: 0.35em;
-		font-weight: 200;
-		color: $color-headline;
-	}
+  h5 {
+    margin-top: 0.31em;
+    font-family: 'Overpass';
+    font-size: 0.35em;
+    font-weight: 200;
+    color: $color-headline;
+  }
 
-	ul {
-		font-size: 0.42em;
-		color: $color-text;
-		line-height: 1.5em;
-		margin-top: 20px;
+  ul {
+    font-size: 0.42em;
+    color: $color-text;
+    line-height: 1.5em;
+    margin-top: 20px;
 
-		li {
-			margin-bottom: 7px;
-		}
+    li {
+      margin-bottom: 7px;
+    }
 
-		li:before{
-			content: "> ";
-			color: $color-heading;
-		}
-	}
+    li:before {
+      content: '> ';
+      color: $color-heading;
+    }
+  }
 
-	#image {
-		border: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 160px;
-		height: 200px;
-	}
+  .image {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 200px;
+  }
 }
 
 #activeExperience {
-	color: #FFFFFF;
+  color: #ffffff;
 }
 
 /******************************
@@ -501,101 +505,100 @@ header > nav {
 *******************************/
 
 #Projects {
-	.container {
-		min-height: 100vh;
-		padding: 40px 0;
+  .container {
+    min-height: 100vh;
+    padding: 40px 0;
 
-		> p {
-			margin-top: 2.2em;
-			font-size: 0.5em;
-			color: $color-text;
+    > p {
+      margin-top: 2.2em;
+      font-size: 0.5em;
+      color: $color-text;
 
-			> a {
-				color: #FFFFFF;
-			}
+      > a {
+        color: #ffffff;
+      }
 
-			> a:hover {
-				color: $color-headline !important;
-			}
-		}
-	}
+      > a:hover {
+        color: $color-headline !important;
+      }
+    }
+  }
 
-	.contentContainer {
-		width: 100%;
-		display: grid;
-	    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	    position: relative;
-	    grid-gap: 30px 30px;
-	    border: 0;
-	}
+  .contentContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    position: relative;
+    grid-gap: 30px 30px;
+    border: 0;
+  }
 
-	a {
-		line-height: 0;
-	}
-
+  a {
+    line-height: 0;
+  }
 }
 
 .project {
-	position: relative;
-	border: 1px solid #112C4C;
-	transition: 1s;
-	width: 100%;
-	height: 300px;
-	min-height: 200px;
-	margin: auto;
-	padding: 40px 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background: rgba(0, 0, 0, 0.15);
-	box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
+  position: relative;
+  border: 1px solid #112c4c;
+  transition: 1s;
+  width: 100%;
+  height: 300px;
+  min-height: 200px;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
 
-	h3 {
-		font-size: 0.6em;
-		font-family: "Overpass";
-		color: #FFFFFF;
-	}
+  h3 {
+    font-size: 0.6em;
+    font-family: 'Overpass';
+    color: #ffffff;
+  }
 
-	ul {
-		max-width: 80%;
-		margin-top: 0.4em;
-		display: flex;		
-		font-size: 0.35em;
-		color: $color-headline;
+  ul {
+    max-width: 80%;
+    margin-top: 0.4em;
+    display: flex;
+    font-size: 0.35em;
+    color: $color-headline;
 
-		li {
-			margin-right: 1em;
-		}
-	}
+    li {
+      margin-right: 1em;
+    }
+  }
 
-	p {
-		font-size: 0.4em;
-		line-height: 1.4em;
-		margin-top: 1.7em;
-		text-align: left;
-	}
+  p {
+    font-size: 0.4em;
+    line-height: 1.4em;
+    margin-top: 1.7em;
+    text-align: left;
+  }
 
-	> div {
-		width: 100%;
-	}
+  > div {
+    width: 100%;
+  }
 
-	svg {
-		fill: #757E98;
-		transition: fill 1s;
+  svg {
+    fill: #757e98;
+    transition: fill 1s;
 
-		:hover {
-			fill: #FFFFFF;
-		}
-	}
+    :hover {
+      fill: #ffffff;
+    }
+  }
 }
 
 .projectTech {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /******************************
@@ -603,25 +606,24 @@ header > nav {
 *******************************/
 
 #Contact {
-	h3 {
-		// font-family: "Roboto Mono";
-		font-size: 0.52em;
-		color: #FFFFFF;
-	}
+  h3 {
+    // font-family: "Roboto Mono";
+    font-size: 0.52em;
+    color: #ffffff;
+  }
 
-	h2 {
-		font-size: 1.1em;
-		font-family: "Overpass";
-		font-weight: 200;
-		margin-top: 0.6em;
-	}
+  h2 {
+    font-size: 1.1em;
+    font-family: 'Overpass';
+    font-weight: 200;
+    margin-top: 0.6em;
+  }
 
-	.bannerContent {
-		div {
-			margin-top: 1.1em;
-		}
-	}
-
+  .bannerContent {
+    div {
+      margin-top: 1.1em;
+    }
+  }
 }
 
 /******************************
@@ -629,22 +631,22 @@ header > nav {
 *******************************/
 
 footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	min-height: 80px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background: #111111;
-	padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #111111;
+  padding: 15px;
 
-	.personal {
-		font-family: "Roboto Mono";
-		font-weight: 300;
-		color: #757E98;
-	}
+  .personal {
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+    color: #757e98;
+  }
 }
 
-@import "mediaQueries";
+@import 'mediaQueries';
