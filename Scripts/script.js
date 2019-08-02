@@ -23,7 +23,7 @@ $(document).ready(function() {
   var lastScroll = 0;
 
   $(window).scroll(function() {
-    if ($(window).scrollTop() > 150) {
+    if ($(window).scrollTop() > 220) {
       $('header').addClass('shadowHeader');
 
       if ($(window).scrollTop() < lastScroll) {

@@ -386,11 +386,17 @@ header > nav {
   align-items: flex-start;
 }
 #About ul li {
-  margin-bottom: 5px;
+  position: relative;
+  margin: 5px;
+  padding-left: 0.8em;
+  line-height: 1.2em;
 }
 #About ul li:before {
   content: "> ";
   color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 #About h4 {
   font-size: 0.48em;
@@ -461,11 +467,16 @@ header > nav {
   margin-top: 20px;
 }
 .experiences ul li {
+  position: relative;
   margin-bottom: 7px;
+  padding-left: 0.8em;
 }
 .experiences ul li:before {
   content: "> ";
   color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .experiences .image {
   border: 0;

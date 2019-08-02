@@ -388,12 +388,18 @@ header > nav {
     align-items: flex-start;
 
     li {
-      margin-bottom: 5px;
+      position: relative;
+      margin: 5px;
+      padding-left: 0.8em;
+      line-height: 1.2em;
     }
 
     li:before {
       content: '> ';
       color: $color-heading;
+      position: absolute;
+      left: 0;
+      top: 0;
     }
   }
 
@@ -476,12 +482,17 @@ header > nav {
     margin-top: 20px;
 
     li {
+      position: relative;
       margin-bottom: 7px;
+      padding-left: 0.8em;
     }
 
     li:before {
       content: '> ';
       color: $color-heading;
+      position: absolute;
+      left: 0;
+      top: 0;
     }
   }
 
