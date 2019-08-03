@@ -6,15 +6,15 @@
 // callback after a long delay
 
 $(document).ready(function() {
-  $('html,body').animate(
+  $("html,body").animate(
     {
       scrollTop: 0
     },
-    'fast',
+    "fast",
     function() {
       setTimeout(function() {
-        $('.loader').fadeOut(600, function() {
-          $('body').css('overflow', 'visible');
+        $(".loader").fadeOut(600, function() {
+          $("body").css("overflow", "visible");
         });
       }, 1400);
     }
@@ -24,16 +24,16 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     if ($(window).scrollTop() > 220) {
-      $('header').addClass('shadowHeader');
+      $("header").addClass("shadowHeader");
 
       if ($(window).scrollTop() < lastScroll) {
-        $('header').removeClass('hideHeader');
+        $("header").removeClass("hideHeader");
       } else {
-        $('header').addClass('hideHeader');
+        $("header").addClass("hideHeader");
       }
     } else {
-      $('header').removeClass('shadowHeader');
-      $('header').removeClass('hideHeader');
+      $("header").removeClass("shadowHeader");
+      $("header").removeClass("hideHeader");
     }
 
     lastScroll = $(window).scrollTop();
@@ -42,13 +42,13 @@ $(document).ready(function() {
 
 // Smooth transition to next page
 // when navigation link is clicked
-$('header nav a').on('click', function(e) {
-  var targetHref = $(this).attr('href');
+$("header nav a").on("click", function(e) {
+  var targetHref = $(this).attr("href");
   var offset = 0;
 
-  offset = targetHref == '#Projects' ? -40 : 0;
+  offset = targetHref == "#Projects" ? -40 : 0;
 
-  $('html, body').animate(
+  $("html, body").animate(
     {
       scrollTop: $(targetHref).offset().top + offset
     },
@@ -58,30 +58,35 @@ $('header nav a').on('click', function(e) {
   e.preventDefault();
 });
 
-var expTargetID = 'Publicis';
+// Current active experience
+var expTargetID = $("a[href='#Publicis']");
 
 // Experiences carousel
-$('.experiences nav a').on('click', function(e) {
+$(".experiences nav a").on("click", function(e) {
   e.preventDefault();
 
-  expTargetID = $(this).attr('href');
+  $(expTargetID).removeClass("activeExperience");
 
-  $('.experiences nav a').css('color', '#47CFF9');
-  $(this).css('color', '#FFFFFF');
+  expTargetID = $(this);
 
-  $('.experiences > div').animate(
+  $(expTargetID).addClass("activeExperience");
+
+  $(".experiences > div").animate(
     {
       scrollLeft:
-        $('.experiences > div').scrollLeft() + $(expTargetID).position().left
+        $(".experiences > div").scrollLeft() +
+        $(expTargetID.attr("href")).position().left
     },
     600
   );
 });
 
 $(window).resize(function() {
-  var container = $('.experiences > div');
+  var container = $(".experiences > div");
 
-  container.scrollLeft(container.scrollLeft() + $(expTargetID).position().left);
+  container.scrollLeft(
+    container.scrollLeft() + $(expTargetID.attr("href")).position().left
+  );
 });
 
 // $('#AboutLink').click(function() {
@@ -91,21 +96,21 @@ $(window).resize(function() {
 // });
 
 // Responsive navigation
-$('#navIcon').on('click', function() {
-  $('.navLinks').css('right', 0);
+$("#navIcon").on("click", function() {
+  $(".navLinks").css("right", 0);
 
-  $('.navLinks a').on('click', function() {
-    $('.navLinks').css('right', '-200px');
+  $(".navLinks a").on("click", function() {
+    $(".navLinks").css("right", "-200px");
   });
 
   $(window).resize(function() {
-    $('.navLinks').css('right', '-200px');
+    $(".navLinks").css("right", "-200px");
   });
 
   $(document).mouseup(function(e) {
-    var menu = $('.navLinks');
+    var menu = $(".navLinks");
     if (!menu.is(e.target) && menu.has(e.target).length === 0) {
-      menu.css('right', '-200px');
+      menu.css("right", "-200px");
     }
   });
 });
