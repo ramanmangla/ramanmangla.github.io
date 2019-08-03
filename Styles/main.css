@@ -252,7 +252,7 @@ a:visited {
 .contentContainer p {
   font-size: 0.47em;
   color: #ffffff;
-  line-height: 1.25em;
+  line-height: 1.4em;
   margin-bottom: 20px;
 }
 
@@ -275,6 +275,11 @@ a:visited {
 }
 .image img {
   width: 100%;
+}
+
+li,
+p {
+  letter-spacing: 0.2px;
 }
 
 .activeLink {
@@ -561,6 +566,7 @@ header > nav {
   position: relative;
   margin-bottom: 7px;
   padding-left: 0.8em;
+  line-height: 1.65em;
 }
 .experiences ul li:before {
   content: "> ";
@@ -658,7 +664,7 @@ header > nav {
 }
 .project p {
   font-size: 0.4em;
-  line-height: 1.4em;
+  line-height: 1.6em;
   margin-top: 1.7em;
   text-align: left;
 }
@@ -776,7 +782,10 @@ footer .personal {
   }
 
   .project {
-    height: 240px;
+    height: 250px;
+  }
+  .project p {
+    padding-right: 30px;
   }
 
   footer .mediaLinks {

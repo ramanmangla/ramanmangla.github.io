@@ -58,7 +58,11 @@
   }
 
   .project {
-    height: 240px;
+    height: 250px;
+
+    p {
+      padding-right: 30px;
+    }
   }
 
   footer {

@@ -139,7 +139,7 @@ a:visited {
   p {
     font-size: 0.47em;
     color: $color-text;
-    line-height: 1.25em;
+    line-height: 1.4em;
     margin-bottom: 20px;
   }
 }
@@ -164,6 +164,11 @@ a:visited {
   img {
     width: 100%;
   }
+}
+
+li,
+p {
+  letter-spacing: 0.2px;
 }
 
 .activeLink {
@@ -503,6 +508,7 @@ header > nav {
       position: relative;
       margin-bottom: 7px;
       padding-left: 0.8em;
+      line-height: 1.65em;
     }
 
     li:before {
@@ -615,7 +621,7 @@ header > nav {
 
   p {
     font-size: 0.4em;
-    line-height: 1.4em;
+    line-height: 1.6em;
     margin-top: 1.7em;
     text-align: left;
   }
