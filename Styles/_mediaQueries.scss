@@ -1,4 +1,4 @@
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 780px) {
   .navLinks {
     position: fixed;
     width: 200px;
@@ -26,6 +26,7 @@
 
   .leftColumn {
     width: 100%;
+    max-width: none;
   }
 
   .description {
@@ -53,6 +54,10 @@
     }
   }
 
+  .bannerLine {
+    stroke-width: 10px;
+  }
+
   .experiences .description {
     padding: 7%;
   }
@@ -77,6 +82,18 @@
       a {
         margin: 0;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    margin: 50px auto;
+  }
+
+  .bannerContent {
+    h1 {
+      font-size: 1.1em;
     }
   }
 }

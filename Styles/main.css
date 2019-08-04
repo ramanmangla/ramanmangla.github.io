@@ -175,8 +175,8 @@ h6 {
 html {
   /* Fluid typography scaling over responsive*/
   /* Max root size = 16px, min root size = 14px*/
-  /* Max viewport width = 1600px, min width = 360px*/
-  font-size: calc(14px + (16 - 14) * ((100vw - 360px) / (1600 - 360)));
+  /* Max viewport width = 1600px, min width = 320px*/
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320)));
 }
 
 body {
@@ -396,7 +396,7 @@ header > nav {
 *******************************/
 .mediaLinks {
   position: fixed;
-  z-index: 5;
+  z-index: 8;
   bottom: 0;
   right: 4%;
   display: flex;
@@ -421,6 +421,10 @@ header > nav {
 /******************************
 			Banner
 *******************************/
+.bannerContent {
+  position: relative;
+  z-index: 6;
+}
 .bannerContent h1,
 .bannerContent h2,
 .bannerContent h3,
@@ -463,6 +467,15 @@ header > nav {
   border-radius: 4px;
   color: #64ffda;
   margin-bottom: 2.9em;
+}
+
+.bannerLine {
+  position: absolute;
+  z-index: 3;
+  bottom: 8vh;
+  left: 0;
+  width: 100%;
+  stroke-width: 4px;
 }
 
 /******************************
@@ -725,7 +738,7 @@ footer .personal {
   color: #757e98;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 780px) {
   .navLinks {
     position: fixed;
     width: 200px;
@@ -753,6 +766,7 @@ footer .personal {
 
   .leftColumn {
     width: 100%;
+    max-width: none;
   }
 
   .description {
@@ -777,6 +791,10 @@ footer .personal {
     font-size: 1.3em;
   }
 
+  .bannerLine {
+    stroke-width: 10px;
+  }
+
   .experiences .description {
     padding: 7%;
   }
@@ -798,6 +816,15 @@ footer .personal {
   }
   footer .mediaLinks a {
     margin: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container {
+    margin: 50px auto;
+  }
+
+  .bannerContent h1 {
+    font-size: 1.1em;
   }
 }
 
