@@ -472,7 +472,7 @@ header > nav {
 .bannerLine {
   position: absolute;
   z-index: 3;
-  bottom: 8vh;
+  bottom: 10vh;
   left: 0;
   width: 100%;
   stroke-width: 4px;
@@ -793,6 +793,7 @@ footer .personal {
 
   .bannerLine {
     stroke-width: 10px;
+    bottom: 15vh;
   }
 
   .experiences .description {
