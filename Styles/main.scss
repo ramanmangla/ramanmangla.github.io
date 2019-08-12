@@ -378,18 +378,6 @@ header > nav {
     margin-top: 1.3em;
     color: $sky-blue;
   }
-
-  // a {
-  //   display: inline-block;
-  //   padding: 15px;
-  //   font-family: "Roboto Mono";
-  //   font-size: 0.33em;
-  //   font-weight: 300;
-  //   border: 1px solid $turquoise;
-  //   border-radius: 4px;
-  //   color: $turquoise;
-  //   margin-bottom: 2.9em;
-  // }
 }
 
 .links {
@@ -711,8 +699,8 @@ header > nav {
 #Contact {
   h3 {
     // font-family: "Roboto Mono";
-    font-size: 0.52em;
-    color: #ffffff;
+    font-size: 0.65em;
+    color: $white;
   }
 
   h2 {
@@ -723,10 +711,61 @@ header > nav {
   }
 
   .bannerContent {
-    div {
-      margin-top: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links {
+    margin-top: 0.9em;
+
+    a {
+      margin: 0 0.2em;
+      width: 0.9em;
+      height: 0.9em;
+      background: $turquoise;
+    }
+
+    a:hover {
+      background: $white;
+    }
+
+    i {
+      font-size: 0.6em;
+      color: $color-background;
+    }
+
+    // GitHub icon styling
+    .githubLink {
+      background: none;
+    }
+
+    .githubLink:hover {
+      background: none;
+    }
+
+    .fa-github {
+      font-size: 0.91em;
+      color: $turquoise;
+    }
+
+    .fa-github:hover {
+      color: $white;
     }
   }
+}
+
+.button {
+  display: inline-block;
+  padding: 15px;
+  font-family: "Roboto Mono";
+  font-size: 0.33em;
+  font-weight: 300;
+  border: 1px solid $turquoise;
+  border-radius: 4px;
+  color: $turquoise;
+  margin-top: 3em;
 }
 
 /******************************

@@ -729,7 +729,7 @@ header > nav {
 			Contact
 *******************************/
 #Contact h3 {
-  font-size: 0.52em;
+  font-size: 0.65em;
   color: #ffffff;
 }
 #Contact h2 {
@@ -738,8 +738,52 @@ header > nav {
   font-weight: 200;
   margin-top: 0.6em;
 }
-#Contact .bannerContent div {
-  margin-top: 1.1em;
+#Contact .bannerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Contact .links {
+  margin-top: 0.9em;
+}
+#Contact .links a {
+  margin: 0 0.2em;
+  width: 0.9em;
+  height: 0.9em;
+  background: #64ffda;
+}
+#Contact .links a:hover {
+  background: #ffffff;
+}
+#Contact .links i {
+  font-size: 0.6em;
+  color: #0d1f3a;
+}
+#Contact .links .githubLink {
+  background: none;
+}
+#Contact .links .githubLink:hover {
+  background: none;
+}
+#Contact .links .fa-github {
+  font-size: 0.91em;
+  color: #64ffda;
+}
+#Contact .links .fa-github:hover {
+  color: #ffffff;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px;
+  font-family: "Roboto Mono";
+  font-size: 0.33em;
+  font-weight: 300;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  color: #64ffda;
+  margin-top: 3em;
 }
 
 /******************************
