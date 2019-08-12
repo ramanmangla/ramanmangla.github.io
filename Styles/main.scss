@@ -51,6 +51,7 @@ $color-highlight: $turquoise;
 $color-border: $midnight-blue;
 $color-medialinks: $grey;
 $color-bullets: $grey;
+$color-hover: $white;
 
 /******************************
 		Base Properties
@@ -82,7 +83,7 @@ a {
 }
 
 a:hover {
-  color: #ffffff !important;
+  color: $color-hover !important;
 }
 
 a:visited {
@@ -231,7 +232,7 @@ p {
     background: $turquoise;
     animation-name: loaderBar;
     animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease;
   }
 }
 
@@ -323,7 +324,6 @@ header > nav {
   > a {
     display: inline-block;
     margin: 10px 0;
-    width: 25px;
 
     svg {
       fill: $color-medialinks;
@@ -332,6 +332,11 @@ header > nav {
       :hover {
         fill: #ffffff;
       }
+    }
+
+    i {
+      font-size: 2em;
+      color: $color-medialinks;
     }
   }
 }
@@ -370,36 +375,75 @@ header > nav {
 
   h2 {
     font-size: 0.65em;
-    margin-top: 1.45em;
+    margin-top: 1.3em;
     color: $sky-blue;
   }
 
-  div {
-    margin-top: 0.85em;
-    display: flex;
-    justify-content: center;
-  }
+  // a {
+  //   display: inline-block;
+  //   padding: 15px;
+  //   font-family: "Roboto Mono";
+  //   font-size: 0.33em;
+  //   font-weight: 300;
+  //   border: 1px solid $turquoise;
+  //   border-radius: 4px;
+  //   color: $turquoise;
+  //   margin-bottom: 2.9em;
+  // }
+}
+
+.links {
+  margin-top: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   a {
-    display: inline-block;
-    padding: 15px;
-    font-family: "Roboto Mono";
-    font-size: 0.33em;
-    font-weight: 300;
-    border: 1px solid $turquoise;
-    border-radius: 4px;
+    line-height: 0;
+    margin: 0 0.2em;
+    width: 0.75em;
+    height: 0.75em;
+    background: $color-medialinks;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  a:hover {
+    background: $turquoise;
+  }
+
+  i {
+    font-size: 0.5em;
+    color: $color-background;
+  }
+
+  // GitHub icon styling
+  .githubLink {
+    background: none;
+  }
+
+  .githubLink:hover {
+    background: none;
+  }
+
+  .fa-github {
+    font-size: 0.79em;
+    color: $color-medialinks;
+    transition: 0.5s ease;
+  }
+
+  .fa-github:hover {
     color: $turquoise;
-    margin-bottom: 2.9em;
   }
 }
 
-.bannerLine {
+.fa-chevron-down {
   position: absolute;
-  z-index: 3;
   bottom: 10vh;
-  left: 0;
-  width: 100%;
-  stroke-width: 4px;
+  font-size: 0.8em;
+  color: $turquoise;
 }
 
 /******************************
@@ -502,7 +546,7 @@ header > nav {
   }
 
   h5 {
-    margin-top: 0.31em;
+    margin-top: 0.4em;
     font-family: "Overpass";
     font-size: 0.35em;
     font-weight: 200;
@@ -577,7 +621,7 @@ header > nav {
       }
 
       > a:hover {
-        color: $color-navlinks !important;
+        color: $sky-blue !important;
       }
     }
   }
@@ -640,15 +684,6 @@ header > nav {
   > div {
     width: 100%;
   }
-
-  svg {
-    fill: $color-medialinks;
-    transition: fill 1s;
-
-    :hover {
-      fill: #ffffff;
-    }
-  }
 }
 
 .projectTech {
@@ -657,6 +692,16 @@ header > nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  .fa-github {
+    font-size: 0.75em;
+    color: $color-medialinks;
+    transition: 0.5s ease;
+  }
+
+  .fa-github:hover {
+    color: $turquoise;
+  }
 }
 
 /******************************

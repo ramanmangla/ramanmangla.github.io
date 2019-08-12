@@ -323,7 +323,7 @@ p {
   background: #64ffda;
   animation-name: loaderBar;
   animation-duration: 2s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
 }
 
 /******************************
@@ -408,7 +408,6 @@ header > nav {
 .mediaLinks > a {
   display: inline-block;
   margin: 10px 0;
-  width: 25px;
 }
 .mediaLinks > a svg {
   fill: #757e98;
@@ -416,6 +415,10 @@ header > nav {
 }
 .mediaLinks > a svg :hover {
   fill: #ffffff;
+}
+.mediaLinks > a i {
+  font-size: 2em;
+  color: #757e98;
 }
 
 /******************************
@@ -449,33 +452,54 @@ header > nav {
 }
 .bannerContent h2 {
   font-size: 0.65em;
-  margin-top: 1.45em;
+  margin-top: 1.3em;
   color: #47cff9;
 }
-.bannerContent div {
-  margin-top: 0.85em;
+
+.links {
+  margin-top: 1.3em;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.bannerContent a {
-  display: inline-block;
-  padding: 15px;
-  font-family: "Roboto Mono";
-  font-size: 0.33em;
-  font-weight: 300;
-  border: 1px solid #64ffda;
-  border-radius: 4px;
+.links a {
+  line-height: 0;
+  margin: 0 0.2em;
+  width: 0.75em;
+  height: 0.75em;
+  background: #757e98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.links a:hover {
+  background: #64ffda;
+}
+.links i {
+  font-size: 0.5em;
+  color: #0d1f3a;
+}
+.links .githubLink {
+  background: none;
+}
+.links .githubLink:hover {
+  background: none;
+}
+.links .fa-github {
+  font-size: 0.79em;
+  color: #757e98;
+  transition: 0.5s ease;
+}
+.links .fa-github:hover {
   color: #64ffda;
-  margin-bottom: 2.9em;
 }
 
-.bannerLine {
+.fa-chevron-down {
   position: absolute;
-  z-index: 3;
   bottom: 10vh;
-  left: 0;
-  width: 100%;
-  stroke-width: 4px;
+  font-size: 0.8em;
+  color: #64ffda;
 }
 
 /******************************
@@ -563,7 +587,7 @@ header > nav {
   color: #47cff9;
 }
 .experiences h5 {
-  margin-top: 0.31em;
+  margin-top: 0.4em;
   font-family: "Overpass";
   font-size: 0.35em;
   font-weight: 200;
@@ -684,13 +708,6 @@ header > nav {
 .project > div {
   width: 100%;
 }
-.project svg {
-  fill: #757e98;
-  transition: fill 1s;
-}
-.project svg :hover {
-  fill: #ffffff;
-}
 
 .projectTech {
   width: 100%;
@@ -698,6 +715,14 @@ header > nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.projectTech .fa-github {
+  font-size: 0.75em;
+  color: #757e98;
+  transition: 0.5s ease;
+}
+.projectTech .fa-github:hover {
+  color: #64ffda;
 }
 
 /******************************
@@ -789,11 +814,6 @@ footer .personal {
 
   .bannerContent h1 {
     font-size: 1.3em;
-  }
-
-  .bannerLine {
-    stroke-width: 10px;
-    bottom: 15vh;
   }
 
   .experiences .description {
