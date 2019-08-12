@@ -410,7 +410,7 @@ header > nav {
   margin: 10px 0;
 }
 .mediaLinks > a svg {
-  fill: #757e98;
+  fill: #47cff9;
   transition: fill 1s;
 }
 .mediaLinks > a svg :hover {
@@ -418,7 +418,7 @@ header > nav {
 }
 .mediaLinks > a i {
   font-size: 2em;
-  color: #757e98;
+  color: #47cff9;
 }
 
 /******************************
@@ -456,7 +456,7 @@ header > nav {
 .bannerContent h2 {
   font-size: 0.65em;
   margin-top: 1.3em;
-  color: #47cff9;
+  color: #64ffda;
 }
 
 .links {
@@ -468,9 +468,9 @@ header > nav {
 .links a {
   line-height: 0;
   margin: 0 0.2em;
-  width: 0.75em;
-  height: 0.75em;
-  background: #757e98;
+  width: 0.8em;
+  height: 0.8em;
+  background: #47cff9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -490,8 +490,8 @@ header > nav {
   background: none;
 }
 .links .fa-github {
-  font-size: 0.79em;
-  color: #757e98;
+  font-size: 0.84em;
+  color: #47cff9;
   transition: 0.5s ease;
 }
 .links .fa-github:hover {
@@ -721,7 +721,7 @@ header > nav {
 }
 .projectTech .fa-github {
   font-size: 0.75em;
-  color: #757e98;
+  color: #47cff9;
   transition: 0.5s ease;
 }
 .projectTech .fa-github:hover {
@@ -754,7 +754,6 @@ header > nav {
   margin: 0 0.2em;
   width: 0.9em;
   height: 0.9em;
-  background: #47cff9;
 }
 #Contact .links a:hover {
   background: #ffffff;
@@ -771,7 +770,6 @@ header > nav {
 }
 #Contact .links .fa-github {
   font-size: 0.91em;
-  color: #47cff9;
 }
 #Contact .links .fa-github:hover {
   color: #ffffff;
