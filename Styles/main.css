@@ -439,8 +439,8 @@ header > nav {
 .bannerContent h3 {
   color: #64ffda;
   font-family: "Roboto Mono";
-  font-size: 0.8em;
-  font-weight: 100;
+  font-size: 0.7em;
+  font-weight: 300;
   margin-top: 0.52em;
 }
 .bannerContent h1 {
@@ -497,7 +497,7 @@ header > nav {
 
 .fa-chevron-down {
   position: absolute;
-  bottom: 10vh;
+  bottom: 14vh;
   font-size: 0.8em;
   color: #64ffda;
 }
