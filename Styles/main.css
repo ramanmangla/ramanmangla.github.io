@@ -443,6 +443,9 @@ header > nav {
   font-weight: 300;
   margin-top: 0.52em;
 }
+.bannerContent h6 {
+  margin: 0;
+}
 .bannerContent h1 {
   font-family: "Overpass";
   font-size: 1.5em;
