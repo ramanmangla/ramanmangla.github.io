@@ -306,40 +306,40 @@ header > nav {
   box-shadow: 0px -4px 14px -1px rgba(0, 0, 0, 0.6);
 }
 
-/******************************
-		Media Links
-*******************************/
+// /******************************
+// 		Media Links
+// *******************************/
 
-.mediaLinks {
-  position: fixed;
-  z-index: 8;
-  bottom: 0;
-  right: 4%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 80px;
+// .mediaLinks {
+//   position: fixed;
+//   z-index: 8;
+//   bottom: 0;
+//   right: 4%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin-bottom: 80px;
 
-  > a {
-    display: inline-block;
-    margin: 10px 0;
+//   > a {
+//     display: inline-block;
+//     margin: 10px 0;
 
-    svg {
-      fill: $color-medialinks;
-      transition: fill 1s;
+//     svg {
+//       fill: $color-medialinks;
+//       transition: fill 1s;
 
-      :hover {
-        fill: #ffffff;
-      }
-    }
+//       :hover {
+//         fill: #ffffff;
+//       }
+//     }
 
-    i {
-      font-size: 2em;
-      color: $color-medialinks;
-    }
-  }
-}
+//     i {
+//       font-size: 2em;
+//       color: $color-medialinks;
+//     }
+//   }
+// }
 
 /******************************
 			Banner
@@ -687,7 +687,7 @@ header > nav {
 
   .fa-github {
     font-size: 0.75em;
-    color: $color-medialinks;
+    color: $grey;
     transition: 0.5s ease;
   }
 
@@ -730,30 +730,12 @@ header > nav {
       height: 0.9em;
     }
 
-    a:hover {
-      background: $white;
-    }
-
     i {
       font-size: 0.6em;
-      color: $color-background;
-    }
-
-    // GitHub icon styling
-    .githubLink {
-      background: none;
-    }
-
-    .githubLink:hover {
-      background: none;
     }
 
     .fa-github {
-      font-size: 0.91em;
-    }
-
-    .fa-github:hover {
-      color: $white;
+      font-size: 0.95em;
     }
   }
 }

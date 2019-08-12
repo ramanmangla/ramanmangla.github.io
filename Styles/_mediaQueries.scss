@@ -65,22 +65,22 @@
       padding-right: 30px;
     }
   }
-
-  footer {
-    .mediaLinks {
-      position: relative;
-      flex-direction: row;
-      width: 160px;
-      margin: 5px;
-      margin-bottom: 15px;
-      right: 0;
-
-      a {
-        margin: 0;
-      }
-    }
-  }
 }
+//   footer {
+//     .mediaLinks {
+//       position: relative;
+//       flex-direction: row;
+//       width: 160px;
+//       margin: 5px;
+//       margin-bottom: 15px;
+//       right: 0;
+
+//       a {
+//         margin: 0;
+//       }
+//     }
+//   }
+// }
 
 @media screen and (max-width: 360px) {
   .container {
