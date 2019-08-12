@@ -729,7 +729,7 @@ header > nav {
 			Contact
 *******************************/
 #Contact h3 {
-  font-size: 0.65em;
+  font-size: 0.55em;
   color: #ffffff;
 }
 #Contact h2 {
@@ -751,7 +751,7 @@ header > nav {
   margin: 0 0.2em;
   width: 0.9em;
   height: 0.9em;
-  background: #64ffda;
+  background: #47cff9;
 }
 #Contact .links a:hover {
   background: #ffffff;
@@ -768,7 +768,7 @@ header > nav {
 }
 #Contact .links .fa-github {
   font-size: 0.91em;
-  color: #64ffda;
+  color: #47cff9;
 }
 #Contact .links .fa-github:hover {
   color: #ffffff;
