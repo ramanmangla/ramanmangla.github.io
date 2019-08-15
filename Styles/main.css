@@ -370,7 +370,7 @@ header > nav {
 }
 
 .navLinks a {
-  padding: 5px 15px;
+  padding: 10px;
   margin: 10px;
   color: #47cff9;
 }
@@ -397,6 +397,7 @@ header > nav {
 .bannerContent {
   position: relative;
   z-index: 6;
+  margin-bottom: 20px;
 }
 .bannerContent h1,
 .bannerContent h2,
@@ -736,14 +737,19 @@ header > nav {
 
 .button {
   display: inline-block;
-  padding: 15px;
+  padding: 0.7em 1.3em !important;
   font-family: "Roboto Mono";
-  font-size: 0.33em;
+  font-size: 0.4em;
   font-weight: 300;
   border: 1px solid #64ffda;
   border-radius: 4px;
-  color: #64ffda;
+  color: #64ffda !important;
   margin-top: 3em;
+}
+
+.resume {
+  font: inherit;
+  font-size: 0.9em;
 }
 
 /******************************
@@ -767,7 +773,7 @@ footer .personal {
   color: #757e98;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 840px) {
   .navLinks {
     position: fixed;
     width: 200px;
