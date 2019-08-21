@@ -46,6 +46,11 @@
 
   .page {
     font-weight: 300;
+    min-height: calc(100vh - 56px);
+  }
+
+  .container {
+    min-height: calc(100vh - 56px);
   }
 
   .bannerContent {

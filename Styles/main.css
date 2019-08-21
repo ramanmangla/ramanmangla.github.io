@@ -397,7 +397,7 @@ header > nav {
 .bannerContent {
   position: relative;
   z-index: 6;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .bannerContent h1,
 .bannerContent h2,
@@ -461,7 +461,7 @@ header > nav {
   background: none;
 }
 .links .fa-github {
-  font-size: 0.84em;
+  font-size: 0.82em;
   color: #47cff9;
   transition: 0.5s ease;
 }
@@ -820,6 +820,11 @@ footer .personal {
 
   .page {
     font-weight: 300;
+    min-height: calc(100vh - 56px);
+  }
+
+  .container {
+    min-height: calc(100vh - 56px);
   }
 
   .bannerContent h1 {
