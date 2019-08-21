@@ -779,6 +779,13 @@ footer .personal {
   font-weight: 300;
   color: #757e98;
 }
+footer a {
+  font-family: "Roboto Mono";
+  margin-top: 6px;
+  color: #757e98 !important;
+  font-weight: 300;
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 840px) {
   .navLinks {
