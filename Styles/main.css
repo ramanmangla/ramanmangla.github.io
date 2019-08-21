@@ -381,7 +381,7 @@ header > nav {
   display: none;
 }
 
-.fa-times {
+#closeNav {
   position: absolute;
   left: 20px;
   top: 20px;
@@ -803,7 +803,7 @@ footer .personal {
     display: block;
   }
 
-  .fa-times {
+  #closeNav {
     display: inline-block;
   }
 
