@@ -291,16 +291,13 @@ p {
 *******************************/
 @keyframes loaderBar {
   0% {
-    left: 0;
+    left: -40px;
   }
-  25% {
-    left: 60px;
-  }
-  75% {
-    left: -60px;
+  50% {
+    left: 40px;
   }
   100% {
-    left: 0;
+    left: -40px;
   }
 }
 .loader {
@@ -322,8 +319,9 @@ p {
   height: 5px;
   background: #64ffda;
   animation-name: loaderBar;
-  animation-duration: 2s;
+  animation-duration: 1.4s;
   animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
 
 /******************************
@@ -381,6 +379,15 @@ header > nav {
   background: #ffffff;
   border-radius: 4px;
   display: none;
+}
+
+.fa-times {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: none;
+  font-size: 1.4em;
+  color: #ffffff;
 }
 
 .hideHeader {
@@ -780,7 +787,7 @@ footer .personal {
     height: 100vh;
     right: -200px;
     top: 0px;
-    background: #111;
+    background: #09172c;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -788,10 +795,16 @@ footer .personal {
     transition: 0.5s ease;
     padding-top: 50px;
     z-index: 15;
+    border: 1px solid #112c4c;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
   }
 
   #navIcon {
     display: block;
+  }
+
+  .fa-times {
+    display: inline-block;
   }
 
   .image,

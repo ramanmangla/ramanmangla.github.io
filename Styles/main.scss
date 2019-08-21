@@ -182,19 +182,19 @@ p {
 
 @keyframes loaderBar {
   0% {
-    left: 0;
+    left: -40px;
   }
 
-  25% {
-    left: 60px;
+  50% {
+    left: 40px;
   }
 
-  75% {
-    left: -60px;
-  }
+  // 75% {
+  //   left: -60px;
+  // }
 
   100% {
-    left: 0;
+    left: -40px;
   }
 }
 
@@ -231,8 +231,9 @@ p {
     height: 5px;
     background: $turquoise;
     animation-name: loaderBar;
-    animation-duration: 2s;
+    animation-duration: 1.4s;
     animation-timing-function: ease;
+    animation-iteration-count: infinite;
   }
 }
 
@@ -296,6 +297,15 @@ header > nav {
   background: #ffffff;
   border-radius: 4px;
   display: none;
+}
+
+.fa-times {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: none;
+  font-size: 1.4em;
+  color: $white;
 }
 
 .hideHeader {

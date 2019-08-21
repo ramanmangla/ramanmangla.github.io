@@ -13,10 +13,10 @@ $(document).ready(function() {
     'fast',
     function() {
       setTimeout(function() {
-        $('.loader').fadeOut(600, function() {
+        $('.loader').fadeOut(800, function() {
           $('body').css('overflow', 'visible');
         });
-      }, 1400);
+      }, 1600);
     }
   );
 
@@ -44,13 +44,12 @@ $(document).ready(function() {
 // when navigation link is clicked
 $('header nav a').on('click', function(e) {
   var targetHref = $(this).attr('href');
-  var offset = 0;
-
-  offset = targetHref == '#Projects' ? -40 : 0;
+  // var offset = 0;
+  // offset = targetHref == '#Projects' ? -40 : 0;
 
   $('html, body').animate(
     {
-      scrollTop: $(targetHref).offset().top + offset
+      scrollTop: $(targetHref).offset().top - 40
     },
     1000
   );
@@ -113,4 +112,8 @@ $('#navIcon').on('click', function() {
       menu.css('right', '-200px');
     }
   });
+});
+
+$('#closeNav').on('click', function() {
+  $('.navLinks').css('right', '-200px');
 });
