@@ -16,7 +16,7 @@ $(document).ready(function() {
         $(".loader").fadeOut(800, function() {
           $("body").css("overflow", "visible");
         });
-      }, 1600);
+      }, 2000);
     }
   );
 
