@@ -12,8 +12,9 @@ $darker-blue: #09172c;
 $white: #ffffff;
 $midnight-blue: #112c4c;
 $grey: #757e98;
-$blue-grey: #97a2be;
+$blue-grey: #8892b0;
 $off-white: #cfdaf7;
+$light-grey: #a8b2d1;
 
 $color-background: $dark-blue;
 $color-navlinks: $sky-blue;
@@ -70,7 +71,7 @@ a:visited {
   background: $color-background;
   font-family: "Roboto", sans-serif;
   font-size: 0.95rem;
-  font-weight: 200;
+  font-weight: 300;
   color: $color-heading;
   // padding: 0px 40px;
   position: relative;
@@ -518,7 +519,6 @@ header > nav {
 
   nav {
     width: 100%;
-    font-size: 0.43em;
     color: $color-navlinks;
     border-bottom: 1px solid $color-border;
     display: flex;
@@ -526,6 +526,7 @@ header > nav {
     align-items: center;
 
     a {
+      font-size: 0.47em;
       position: relative;
       padding: 15px 10px;
       font-weight: 400;
@@ -551,7 +552,7 @@ header > nav {
   }
 
   h3 {
-    font-size: 0.43em;
+    font-size: 0.48em;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     line-height: 140%;
@@ -568,15 +569,15 @@ header > nav {
   // }
 
   h5 {
-    margin-top: 0.63em;
+    margin-top: 0.7em;
     font-family: "Roboto Mono", monospace;
-    font-size: 0.35em;
+    font-size: 0.37em;
     font-weight: 200;
-    color: $color-text;
+    color: $light-grey;
   }
 
   ul {
-    font-size: 0.42em;
+    font-size: 0.44em;
     color: $color-text;
     line-height: 150%;
     margin-top: 20px;
@@ -686,7 +687,7 @@ header > nav {
     font-size: 0.5em;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    // color: $turquoise;
+    color: $turquoise;
   }
 
   ul {
@@ -723,7 +724,7 @@ header > nav {
 
   .fa-github {
     font-size: 0.75em;
-    color: $off-white;
+    color: $light-grey;
     transition: 0.5s ease;
   }
 

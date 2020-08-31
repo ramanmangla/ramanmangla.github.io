@@ -184,7 +184,7 @@ a:visited {
   background: #091529;
   font-family: "Roboto", sans-serif;
   font-size: 0.95rem;
-  font-weight: 200;
+  font-weight: 300;
   color: #cfdaf7;
   position: relative;
 }
@@ -228,7 +228,7 @@ a:visited {
   font-weight: 300;
   line-height: 150%;
   font-size: 0.46em;
-  color: #97a2be;
+  color: #8892b0;
   text-align: justify;
 }
 
@@ -442,7 +442,7 @@ header > nav {
   margin-right: 0.2em;
   width: 0.73em;
   height: 0.73em;
-  background: #97a2be;
+  background: #8892b0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -465,7 +465,7 @@ header > nav {
 }
 .links .fa-github {
   font-size: 0.79em;
-  color: #97a2be;
+  color: #8892b0;
   transition: 0.5s ease;
 }
 .links .fa-github:hover {
@@ -486,7 +486,7 @@ header > nav {
   width: 80%;
   margin-top: 10px;
   font-size: 0.35em;
-  color: #97a2be;
+  color: #8892b0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -529,7 +529,6 @@ header > nav {
 }
 .experiences nav {
   width: 100%;
-  font-size: 0.43em;
   color: #47cff9;
   border-bottom: 1px solid #112c4c;
   display: flex;
@@ -537,6 +536,7 @@ header > nav {
   align-items: center;
 }
 .experiences nav a {
+  font-size: 0.47em;
   position: relative;
   padding: 15px 10px;
   font-weight: 400;
@@ -558,22 +558,22 @@ header > nav {
   padding: 40px 50px;
 }
 .experiences h3 {
-  font-size: 0.43em;
+  font-size: 0.48em;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 140%;
   color: #cfdaf7;
 }
 .experiences h5 {
-  margin-top: 0.63em;
+  margin-top: 0.7em;
   font-family: "Roboto Mono", monospace;
-  font-size: 0.35em;
+  font-size: 0.37em;
   font-weight: 200;
-  color: #97a2be;
+  color: #a8b2d1;
 }
 .experiences ul {
-  font-size: 0.42em;
-  color: #97a2be;
+  font-size: 0.44em;
+  color: #8892b0;
   line-height: 150%;
   margin-top: 20px;
   font-family: "Source Sans Pro", sans-serif;
@@ -625,7 +625,7 @@ header > nav {
 #Projects .container > p {
   margin-top: 2.2em;
   font-size: 0.5em;
-  color: #97a2be;
+  color: #8892b0;
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
   line-height: 1.4em;
@@ -670,6 +670,7 @@ header > nav {
   font-size: 0.5em;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  color: #64ffda;
 }
 .project ul {
   max-width: 80%;
@@ -701,7 +702,7 @@ header > nav {
 }
 .projectTech .fa-github {
   font-size: 0.75em;
-  color: #cfdaf7;
+  color: #a8b2d1;
   transition: 0.5s ease;
 }
 .projectTech .fa-github:hover {
