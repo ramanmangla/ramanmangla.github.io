@@ -22,7 +22,7 @@ $color-heading: $off-white;
 $color-loading: $darker-blue;
 $color-highlight: $turquoise;
 $color-border: $midnight-blue;
-$color-medialinks: $sky-blue;
+$color-medialinks: $blue-grey;
 $color-bullets: $turquoise;
 $color-hover: $off-white;
 
@@ -397,21 +397,21 @@ header > nav {
   }
 
   .button {
-    margin-top: 3.8em;
+    margin-top: 2.8em;
   }
 }
 
 .links {
-  margin-top: 1.1em;
+  margin-top: 0.9em;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
 
   a {
     line-height: 0;
-    margin: 0 0.2em;
-    width: 0.8em;
-    height: 0.8em;
+    margin-right: 0.2em;
+    width: 0.73em;
+    height: 0.73em;
     background: $color-medialinks;
     display: flex;
     justify-content: center;
@@ -424,8 +424,10 @@ header > nav {
   }
 
   i {
-    font-size: 0.5em;
+    font-size: 0.47em;
     color: $color-background;
+    position: relative;
+    top: 1px;
   }
 
   // GitHub icon styling
@@ -438,7 +440,7 @@ header > nav {
   }
 
   .fa-github {
-    font-size: 0.82em;
+    font-size: 0.79em;
     color: $color-medialinks;
     transition: 0.5s ease;
   }
@@ -552,7 +554,7 @@ header > nav {
     font-size: 0.46em;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    color: $turquoise;
+    // color: $turquoise;
   }
 
   h4 {
@@ -682,7 +684,7 @@ header > nav {
     font-size: 0.5em;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    color: $turquoise;
+    // color: $turquoise;
   }
 
   ul {
@@ -719,7 +721,7 @@ header > nav {
 
   .fa-github {
     font-size: 0.75em;
-    color: $grey;
+    color: $off-white;
     transition: 0.5s ease;
   }
 
@@ -778,6 +780,7 @@ header > nav {
       margin: 0 0.2em;
       width: 0.8em;
       height: 0.8em;
+      background: $sky-blue;
     }
 
     i {
@@ -788,6 +791,11 @@ header > nav {
 
     .fa-github {
       font-size: 0.88em;
+      color: $sky-blue;
+    }
+
+    .githubLink {
+      background: none;
     }
   }
 }
