@@ -5,15 +5,15 @@
 // Hiding/Removing CSS loader from DOM using
 // callback after a long delay
 
-$(document).ready(function() {
+$(document).ready(function () {
   $("html,body").animate(
     {
-      scrollTop: 0
+      scrollTop: 0,
     },
     "fast",
-    function() {
-      setTimeout(function() {
-        $(".loader").fadeOut(800, function() {
+    function () {
+      setTimeout(function () {
+        $(".loader").fadeOut(800, function () {
           $("body").css("overflow", "visible");
         });
       }, 2000);
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   var lastScroll = 0;
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(window).scrollTop() > 220) {
       $("header").addClass("shadowHeader");
 
@@ -42,14 +42,14 @@ $(document).ready(function() {
 
 // Smooth transition to next page
 // when navigation link is clicked
-$("header nav a").on("click", function(e) {
+$("header nav a").on("click", function (e) {
   var targetHref = $(this).attr("href");
   // var offset = 0;
   // offset = targetHref == '#Projects' ? -40 : 0;
 
   $("html, body").animate(
     {
-      scrollTop: $(targetHref).offset().top - 25
+      scrollTop: $(targetHref).offset().top - 25,
     },
     1000
   );
@@ -58,10 +58,10 @@ $("header nav a").on("click", function(e) {
 });
 
 // Current active experience
-var expTargetID = $("a[href='#Publicis']");
+var expTargetID = $("a[href='#Google']");
 
 // Experiences carousel
-$(".experiences nav a").on("click", function(e) {
+$(".experiences nav a").on("click", function (e) {
   e.preventDefault();
 
   $(expTargetID).removeClass("activeExperience");
@@ -74,13 +74,13 @@ $(".experiences nav a").on("click", function(e) {
     {
       scrollLeft:
         $(".experiences > div").scrollLeft() +
-        $(expTargetID.attr("href")).position().left
+        $(expTargetID.attr("href")).position().left,
     },
     600
   );
 });
 
-$(window).resize(function() {
+$(window).resize(function () {
   var container = $(".experiences > div");
 
   container.scrollLeft(
@@ -95,18 +95,18 @@ $(window).resize(function() {
 // });
 
 // Responsive navigation
-$("#navIcon").on("click", function() {
+$("#navIcon").on("click", function () {
   $(".navLinks").css("right", 0);
 
-  $(".navLinks a").on("click", function() {
+  $(".navLinks a").on("click", function () {
     $(".navLinks").css("right", "-200px");
   });
 
-  $(window).resize(function() {
+  $(window).resize(function () {
     $(".navLinks").css("right", "-200px");
   });
 
-  $(document).mouseup(function(e) {
+  $(document).mouseup(function (e) {
     var menu = $(".navLinks");
     if (!menu.is(e.target) && menu.has(e.target).length === 0) {
       menu.css("right", "-200px");
@@ -114,6 +114,6 @@ $("#navIcon").on("click", function() {
   });
 });
 
-$("#closeNav").on("click", function() {
+$("#closeNav").on("click", function () {
   $(".navLinks").css("right", "-200px");
 });

@@ -555,29 +555,24 @@ header > nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px 50px;
+  padding: 40px 50px;
 }
 .experiences h3 {
-  font-size: 0.46em;
+  font-size: 0.43em;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-}
-.experiences h4 {
-  margin-top: 0.47em;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.43em;
-  font-weight: 300;
-  color: #64ffda;
-}
-.experiences h5 {
-  margin-top: 0.58em;
-  font-family: "Roboto Mono", monospace;
-  font-size: 0.33em;
-  font-weight: 200;
+  line-height: 140%;
   color: #cfdaf7;
 }
+.experiences h5 {
+  margin-top: 0.63em;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.35em;
+  font-weight: 200;
+  color: #97a2be;
+}
 .experiences ul {
-  font-size: 0.43em;
+  font-size: 0.42em;
   color: #97a2be;
   line-height: 150%;
   margin-top: 20px;
@@ -607,7 +602,7 @@ header > nav {
 }
 
 .activeExperience {
-  color: #cfdaf7;
+  color: #64ffda;
 }
 
 .activeExperience:after {
@@ -871,7 +866,7 @@ footer a {
   }
 
   .experiences .description {
-    padding: 7%;
+    padding: 9% 8%;
   }
 
   .project {
