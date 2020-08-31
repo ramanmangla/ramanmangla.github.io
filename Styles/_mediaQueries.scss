@@ -5,7 +5,7 @@
     height: 100vh;
     right: -200px;
     top: 0px;
-    background: $darker-blue;
+    background: $dark-blue;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -61,7 +61,11 @@
 
   .bannerContent {
     h1 {
-      font-size: 1.3em;
+      font-size: 1.25em;
+    }
+
+    h2 {
+      font-size: 1.1em;
     }
   }
 
@@ -75,6 +79,10 @@
     p {
       padding-right: 30px;
     }
+  }
+
+  .mobile-remove-project {
+    display: none;
   }
 }
 //   footer {

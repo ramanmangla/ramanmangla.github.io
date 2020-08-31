@@ -143,33 +143,6 @@ h6 {
 }
 
 /******************************
-			Fonts
-*******************************/
-/*@font-face {
-    font-family: "Raleway";
-    src: url('../Static/Fonts/Raleway-SemiBold.woff2') format('woff2'),
-        url('../Static/Fonts/Raleway-SemiBold.woff') format('woff'),
-        url('../Static/Fonts/Raleway-SemiBold.ttf') format('ttf');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url('../Static/Fonts/Raleway-Light.woff2') format('woff2'),
-        url('../Static/Fonts/Raleway-Light.woff') format('woff'),
-        url('../Static/Fonts/Raleway-Light.ttf') format('ttf');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url('../Static/Fonts/Raleway-ExtraLight.ttf') format('ttf');
-    font-weight: 200;
-    font-style: normal;
-}*/
-/******************************
 		Base Properties
 *******************************/
 html {
@@ -182,9 +155,9 @@ html {
 body {
   /*Overscroll-behavior eliminates scroll bounce*/
   /*overscroll-behavior: none;*/
-  background: #0d1f3a;
+  background: #091529;
   margin: 0;
-  overflow: hidden;
+  overflow: visible;
   transition: 1s ease;
 }
 
@@ -198,7 +171,7 @@ a {
 }
 
 a:hover {
-  color: #ffffff !important;
+  color: #cfdaf7 !important;
 }
 
 a:visited {
@@ -208,19 +181,19 @@ a:visited {
 .page {
   width: 100%;
   min-height: 100vh;
-  background: #0d1f3a;
-  font-family: "Raleway";
+  background: #091529;
+  font-family: "Roboto", sans-serif;
   font-size: 0.95rem;
   font-weight: 200;
-  color: #64ffda;
+  color: #cfdaf7;
   position: relative;
 }
 
 .container {
   /*Max-width so that container doesn't stretch too much*/
   /*And to set set margin auto for centering horizontally*/
-  max-width: 900px;
-  width: 88%;
+  max-width: 850px;
+  width: 86%;
   margin: auto;
   min-height: 100vh;
   /*Flex box to vertically center text div*/
@@ -250,10 +223,13 @@ a:visited {
   border-bottom: 1px solid #112c4c;
 }
 .contentContainer p {
-  font-size: 0.47em;
-  color: #ffffff;
-  line-height: 1.4em;
   margin-bottom: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 0.46em;
+  color: #97a2be;
+  text-align: justify;
 }
 
 .leftColumn {
@@ -263,7 +239,6 @@ a:visited {
 
 .highlight {
   color: #64ffda;
-  font-weight: 400;
 }
 
 .image {
@@ -332,16 +307,16 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 70px;
   padding: 0 60px;
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Raleway";
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 300;
-  background: #0d1f3a;
+  background: #091529;
   transition: 0.5s ease;
 }
 
@@ -401,40 +376,60 @@ header > nav {
 /******************************
 			Banner
 *******************************/
+#Home .container {
+  max-width: 950px;
+}
+
 .bannerContent {
   position: relative;
   z-index: 6;
-  margin-bottom: 15px;
+  align-self: flex-start;
 }
 .bannerContent h1,
 .bannerContent h2,
 .bannerContent h3,
 .bannerContent h6 {
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 .bannerContent h6,
 .bannerContent h3 {
   color: #64ffda;
-  font-family: "Roboto Mono";
-  font-size: 0.7em;
-  font-weight: 300;
-  margin-top: 0.52em;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.46em;
+  font-weight: 200;
 }
 .bannerContent h6 {
   margin: 0;
 }
 .bannerContent h1 {
-  font-family: "Overpass";
-  font-size: 1.5em;
-  font-weight: 200;
-  margin-top: 0.18em;
-  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75em;
+  font-weight: 500;
+  margin-top: 0.48em;
+  color: #ccd6f6;
+  margin-left: -2px;
 }
 .bannerContent h2 {
-  font-size: 0.65em;
-  margin-top: 1.3em;
-  color: #64ffda;
+  font-size: 1.3em;
+  line-height: 130%;
+  margin-top: 0.4em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #8893b0;
+}
+.bannerContent p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  line-height: 155%;
+  font-size: 0.46em;
+  max-width: 480px;
+  text-align: left;
+  color: #8893b0;
+  margin-top: 3em;
+}
+.bannerContent .button {
+  margin-top: 3.8em;
 }
 
 .links {
@@ -459,7 +454,7 @@ header > nav {
 }
 .links i {
   font-size: 0.5em;
-  color: #0d1f3a;
+  color: #091529;
 }
 .links .githubLink {
   background: none;
@@ -487,23 +482,24 @@ header > nav {
 			About
 *******************************/
 #About ul {
-  width: 95%;
+  width: 80%;
   margin-top: 10px;
-  font-size: 0.38em;
-  color: #ffffff;
+  font-size: 0.35em;
+  color: #97a2be;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  font-family: "Roboto Mono", monospace;
 }
 #About ul li {
   position: relative;
   margin: 5px;
-  padding-left: 0.8em;
-  line-height: 1.2em;
+  padding-left: 1.1em;
+  line-height: 1.5em;
 }
 #About ul li:before {
   content: "> ";
-  color: #757e98;
+  color: #64ffda;
   position: absolute;
   left: 0;
   top: 0;
@@ -519,6 +515,10 @@ header > nav {
 /******************************
 		Experiences
 *******************************/
+#Experience .container {
+  max-width: 770px;
+}
+
 .experiences {
   background: rgba(0, 0, 0, 0.15);
   flex-direction: column;
@@ -528,7 +528,7 @@ header > nav {
 }
 .experiences nav {
   width: 100%;
-  font-size: 0.45em;
+  font-size: 0.43em;
   color: #47cff9;
   border-bottom: 1px solid #112c4c;
   display: flex;
@@ -538,6 +538,7 @@ header > nav {
 .experiences nav a {
   position: relative;
   padding: 15px 10px;
+  font-weight: 400;
 }
 .experiences > div {
   width: 100%;
@@ -556,29 +557,31 @@ header > nav {
   padding: 20px 50px;
 }
 .experiences h3 {
-  font-size: 0.6em;
-  font-family: "Overpass";
-  font-weight: 200;
+  font-size: 0.46em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #64ffda;
 }
 .experiences h4 {
-  margin-top: 0.27em;
-  font-family: "Overpass";
-  font-size: 0.48em;
-  font-weight: 200;
-  color: #47cff9;
+  margin-top: 0.47em;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.43em;
+  font-weight: 300;
+  color: #64ffda;
 }
 .experiences h5 {
-  margin-top: 0.4em;
-  font-family: "Overpass";
-  font-size: 0.35em;
+  margin-top: 0.58em;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.33em;
   font-weight: 200;
-  color: #47cff9;
+  color: #cfdaf7;
 }
 .experiences ul {
-  font-size: 0.42em;
-  color: #ffffff;
-  line-height: 1.5em;
+  font-size: 0.43em;
+  color: #97a2be;
+  line-height: 150%;
   margin-top: 20px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .experiences ul li {
   position: relative;
@@ -588,7 +591,7 @@ header > nav {
 }
 .experiences ul li:before {
   content: "> ";
-  color: #757e98;
+  color: #64ffda;
   position: absolute;
   left: 0;
   top: 0;
@@ -604,7 +607,7 @@ header > nav {
 }
 
 .activeExperience {
-  color: #ffffff;
+  color: #cfdaf7;
 }
 
 .activeExperience:after {
@@ -627,7 +630,8 @@ header > nav {
 #Projects .container > p {
   margin-top: 2.2em;
   font-size: 0.5em;
-  color: #ffffff;
+  color: #97a2be;
+  font-family: "Source Sans Pro", sans-serif;
   text-align: center;
   line-height: 1.4em;
 }
@@ -656,6 +660,7 @@ header > nav {
   width: 100%;
   height: 325px;
   min-height: 200px;
+  max-width: 280px;
   margin: auto;
   padding: 40px 20px;
   display: flex;
@@ -666,8 +671,9 @@ header > nav {
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
 }
 .project h3 {
-  font-size: 0.6em;
-  font-family: "Overpass";
+  font-size: 0.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: #64ffda;
 }
 .project ul {
@@ -675,14 +681,14 @@ header > nav {
   margin-top: 0.4em;
   display: flex;
   font-size: 0.35em;
-  color: #47cff9;
+  color: #64ffda;
 }
 .project ul li {
   margin-right: 1em;
   white-space: nowrap;
 }
 .project p {
-  font-size: 0.4em;
+  font-size: 0.42em;
   line-height: 1.6em;
   margin-top: 1.7em;
   text-align: left;
@@ -745,7 +751,7 @@ header > nav {
 .button {
   display: inline-block;
   padding: 0.7em 1.3em !important;
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-size: 0.4em;
   font-weight: 300;
   border: 1px solid #64ffda;
@@ -775,12 +781,12 @@ footer {
   padding: 15px;
 }
 footer .personal {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-weight: 300;
   color: #757e98;
 }
 footer a {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   margin-top: 6px;
   color: #757e98 !important;
   font-weight: 300;
@@ -794,7 +800,7 @@ footer a {
     height: 100vh;
     right: -200px;
     top: 0px;
-    background: #09172c;
+    background: #091529;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -848,7 +854,10 @@ footer a {
   }
 
   .bannerContent h1 {
-    font-size: 1.3em;
+    font-size: 1.25em;
+  }
+  .bannerContent h2 {
+    font-size: 1.1em;
   }
 
   .experiences .description {
@@ -860,6 +869,10 @@ footer a {
   }
   .project p {
     padding-right: 30px;
+  }
+
+  .mobile-remove-project {
+    display: none;
   }
 }
 @media screen and (max-width: 360px) {

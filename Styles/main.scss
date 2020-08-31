@@ -1,57 +1,30 @@
 // CSS Reset
 @import "reset";
 
-/******************************
-			Fonts
-*******************************/
-
-/*@font-face {
-    font-family: "Raleway";
-    src: url('../Static/Fonts/Raleway-SemiBold.woff2') format('woff2'),
-        url('../Static/Fonts/Raleway-SemiBold.woff') format('woff'),
-        url('../Static/Fonts/Raleway-SemiBold.ttf') format('ttf');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url('../Static/Fonts/Raleway-Light.woff2') format('woff2'),
-        url('../Static/Fonts/Raleway-Light.woff') format('woff'),
-        url('../Static/Fonts/Raleway-Light.ttf') format('ttf');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url('../Static/Fonts/Raleway-ExtraLight.ttf') format('ttf');
-    font-weight: 200;
-    font-style: normal;
-}*/
-
 //******************************
 // 		SCSS Variables
 //******************************
 
-$dark-blue: #0d1f3a;
+$dark-blue: #091529;
 $sky-blue: #47cff9;
 $turquoise: #64ffda;
 $darker-blue: #09172c;
 $white: #ffffff;
 $midnight-blue: #112c4c;
 $grey: #757e98;
+$blue-grey: #97a2be;
+$off-white: #cfdaf7;
 
 $color-background: $dark-blue;
 $color-navlinks: $sky-blue;
-$color-text: $white;
-$color-heading: $turquoise;
+$color-text: $blue-grey;
+$color-heading: $off-white;
 $color-loading: $darker-blue;
 $color-highlight: $turquoise;
 $color-border: $midnight-blue;
 $color-medialinks: $sky-blue;
-$color-bullets: $grey;
-$color-hover: $white;
+$color-bullets: $turquoise;
+$color-hover: $off-white;
 
 /******************************
 		Base Properties
@@ -69,7 +42,8 @@ body {
   /*overscroll-behavior: none;*/
   background: $color-background;
   margin: 0;
-  overflow: hidden;
+  // overflow: hidden;
+  overflow: visible;
   transition: 1s ease;
 }
 
@@ -94,7 +68,7 @@ a:visited {
   width: 100%;
   min-height: 100vh;
   background: $color-background;
-  font-family: "Raleway";
+  font-family: "Roboto", sans-serif;
   font-size: 0.95rem;
   font-weight: 200;
   color: $color-heading;
@@ -105,9 +79,9 @@ a:visited {
 .container {
   /*Max-width so that container doesn't stretch too much*/
   /*And to set set margin auto for centering horizontally*/
-  max-width: 900px;
+  max-width: 850px;
   // min-height: 100vh;
-  width: 88%;
+  width: 86%;
   margin: auto;
   min-height: 100vh;
   /*Flex box to vertically center text div*/
@@ -138,10 +112,13 @@ a:visited {
   border-bottom: 1px solid $color-border;
 
   p {
-    font-size: 0.47em;
-    color: $color-text;
-    line-height: 1.4em;
     margin-bottom: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    line-height: 150%;
+    font-size: 0.46em;
+    color: $color-text;
+    text-align: justify;
   }
 }
 
@@ -152,7 +129,7 @@ a:visited {
 
 .highlight {
   color: $color-highlight;
-  font-weight: 400;
+  // font-weight: 400;
 }
 
 .image {
@@ -246,13 +223,13 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 70px;
   padding: 0 60px;
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Raleway";
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 300;
   background: $color-background;
@@ -355,26 +332,33 @@ header > nav {
 			Banner
 *******************************/
 
+#Home {
+  .container {
+    max-width: 950px;
+  }
+}
+
 .bannerContent {
   position: relative;
   z-index: 6;
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
+  align-self: flex-start;
 
   h1,
   h2,
   h3,
   h6 {
-    text-align: center;
+    text-align: left;
     margin: 0;
   }
 
   h6,
   h3 {
     color: $turquoise;
-    font-family: "Roboto Mono";
-    font-size: 0.7em;
-    font-weight: 300;
-    margin-top: 0.52em;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.46em;
+    font-weight: 200;
+    // margin-top: 0.52em;
   }
 
   h6 {
@@ -382,17 +366,38 @@ header > nav {
   }
 
   h1 {
-    font-family: "Overpass";
-    font-size: 1.5em;
-    font-weight: 200;
-    margin-top: 0.18em;
-    color: $white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.75em;
+    font-weight: 500;
+    margin-top: 0.48em;
+    color: #ccd6f6;
+    margin-left: -2px;
   }
 
   h2 {
-    font-size: 0.65em;
-    margin-top: 1.3em;
-    color: $turquoise;
+    font-size: 1.3em;
+    line-height: 130%;
+    margin-top: 0.4em;
+    // color: $turquoise;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #8893b0;
+    // letter-spacing: -1px;
+  }
+
+  p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    line-height: 155%;
+    font-size: 0.46em;
+    max-width: 480px;
+    text-align: left;
+    color: #8893b0;
+    margin-top: 3em;
+  }
+
+  .button {
+    margin-top: 3.8em;
   }
 }
 
@@ -456,19 +461,20 @@ header > nav {
 
 #About {
   ul {
-    width: 95%;
+    width: 80%;
     margin-top: 10px;
-    font-size: 0.38em;
+    font-size: 0.35em;
     color: $color-text;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    font-family: "Roboto Mono", monospace;
 
     li {
       position: relative;
       margin: 5px;
-      padding-left: 0.8em;
-      line-height: 1.2em;
+      padding-left: 1.1em;
+      line-height: 1.5em;
     }
 
     li:before {
@@ -494,6 +500,12 @@ header > nav {
 		Experiences
 *******************************/
 
+#Experience {
+  .container {
+    max-width: 770px;
+  }
+}
+
 .experiences {
   // display: block;
   background: rgba(0, 0, 0, 0.15);
@@ -504,7 +516,7 @@ header > nav {
 
   nav {
     width: 100%;
-    font-size: 0.45em;
+    font-size: 0.43em;
     color: $color-navlinks;
     border-bottom: 1px solid $color-border;
     display: flex;
@@ -514,6 +526,7 @@ header > nav {
     a {
       position: relative;
       padding: 15px 10px;
+      font-weight: 400;
     }
   }
 
@@ -536,32 +549,34 @@ header > nav {
   }
 
   h3 {
-    font-size: 0.6em;
-    font-family: "Overpass";
-    font-weight: 200;
+    font-size: 0.46em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: $turquoise;
   }
 
   h4 {
-    margin-top: 0.27em;
-    font-family: "Overpass";
-    font-size: 0.48em;
-    font-weight: 200;
-    color: $sky-blue;
+    margin-top: 0.47em;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.43em;
+    font-weight: 300;
+    color: $turquoise;
   }
 
   h5 {
-    margin-top: 0.4em;
-    font-family: "Overpass";
-    font-size: 0.35em;
+    margin-top: 0.58em;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.33em;
     font-weight: 200;
-    color: $sky-blue;
+    color: $off-white;
   }
 
   ul {
-    font-size: 0.42em;
+    font-size: 0.43em;
     color: $color-text;
-    line-height: 1.5em;
+    line-height: 150%;
     margin-top: 20px;
+    font-family: "Source Sans Pro", sans-serif;
 
     li {
       position: relative;
@@ -591,7 +606,7 @@ header > nav {
 }
 
 .activeExperience {
-  color: #ffffff;
+  color: $off-white;
   //   border-bottom: 2px solid $turquoise;
 }
 
@@ -617,6 +632,7 @@ header > nav {
       margin-top: 2.2em;
       font-size: 0.5em;
       color: $color-text;
+      font-family: "Source Sans Pro", sans-serif;
       text-align: center;
       line-height: 1.4em;
 
@@ -651,6 +667,7 @@ header > nav {
   width: 100%;
   height: 325px;
   min-height: 200px;
+  max-width: 280px;
   margin: auto;
   padding: 40px 20px;
   display: flex;
@@ -661,9 +678,10 @@ header > nav {
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
 
   h3 {
-    font-size: 0.6em;
-    font-family: "Overpass";
-    color: $color-heading;
+    font-size: 0.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: $turquoise;
   }
 
   ul {
@@ -671,7 +689,7 @@ header > nav {
     margin-top: 0.4em;
     display: flex;
     font-size: 0.35em;
-    color: $color-navlinks;
+    color: $turquoise;
 
     li {
       margin-right: 1em;
@@ -680,7 +698,7 @@ header > nav {
   }
 
   p {
-    font-size: 0.4em;
+    font-size: 0.42em;
     line-height: 1.6em;
     margin-top: 1.7em;
     text-align: left;
@@ -757,7 +775,7 @@ header > nav {
 .button {
   display: inline-block;
   padding: 0.7em 1.3em !important;
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-size: 0.4em;
   font-weight: 300;
   border: 1px solid $turquoise;
@@ -788,13 +806,13 @@ footer {
   padding: 15px;
 
   .personal {
-    font-family: "Roboto Mono";
+    font-family: "Roboto Mono", monospace;
     font-weight: 300;
     color: $grey;
   }
 
   a {
-    font-family: "Roboto Mono";
+    font-family: "Roboto Mono", monospace;
     margin-top: 6px;
     color: $grey !important;
     font-weight: 300;

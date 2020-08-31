@@ -1,332 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Hi! I'm Raman Mangla and I develop applications for the web and beyond.">
-	<meta name="keywords" content="software developer,developer,designer,full stack,front-end,back-end,uoft,university of toronto,computer engineer, engineering">
-	<meta name="author" content="Raman Mangla">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Raman Mangla</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Hi! I'm Raman Mangla and I develop applications for the web and beyond."
+    />
+    <meta
+      name="keywords"
+      content="software developer,developer,designer,full stack,front-end,back-end,uoft,university of toronto,computer engineer, engineering"
+    />
+    <meta name="author" content="Raman Mangla" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raman Mangla</title>
 
-	<meta property="og:title" content="Raman Mangla">
-	<meta property="og:image" content="Static/Images/LogoFeature.png">
-	<meta property="og:description" content="Hi! I'm Raman Mangla and I develop applications for the web and beyond. Checkout my website to learn more!">
-	<meta property="og:url" content="https://www.ramanmangla.com">
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144186279-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+    <meta property="og:title" content="Raman Mangla" />
+    <meta property="og:image" content="Static/Images/LogoFeature.png" />
+    <meta
+      property="og:description"
+      content="Hi! I'm Raman Mangla and I develop applications for the web and beyond. Checkout my website to learn more!"
+    />
+    <meta property="og:url" content="https://www.ramanmangla.com" />
 
-		gtag('config', 'UA-144186279-1');
-	</script>
-		
-	<link rel="icon" href="Static/Images/Logo.png" size="16x16">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-144186279-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-	<link rel="stylesheet" type="text/css" href="Styles/main.css">
-	<link href="Static/css/all.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Overpass:200&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap" rel="stylesheet">
-</head>
-<body>
-	<header>
-		<nav>
-			<div>
-				<a href="#Home" id="logo">
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="width: 2.8rem" viewBox="0 0 617.969 484.896" xml:space="preserve">
-						<g id="symbol">
-							<polygon style="fill:none;stroke-width:22;stroke-miterlimit:10;" points="19.527,472.896 212.905,30.949 
-								406.3,472.896"/>
-							<polygon style="fill:none;stroke-width:22;stroke-miterlimit:10;" points="213.389,472.896 406.768,30.949 
-								600.164,472.896"/>
-						</g>
-					</svg>
-				</a>
-			</div>
-			<div class ="navLinks">
-        <i class="fas fa-times" id="closeNav"></i>
-				<a href="#About">About</a>
-				<a href="#Experience">Experience</a>
-				<a href="#Projects">Projects</a>
-        <a href="#Contact">Contact</a>
-        <a href="https://drive.google.com/file/d/1julvgYA628lCsuuTlU1veGM05oeVUDio/view?usp=sharing" class="button resume" target="_blank">Resume</a>
-			</div>
-			<div id="navIcon"></div>
-		</nav>
-	</header>
-	<section class="page" id="Home">
-		<div class = "container">
-			<div class="bannerContent">
-				<h6>...</h6>
-				<h3>Hello! I'm</h3>
-				<h1>Raman Mangla</h1>
-				<h2>Developer & Designer</h2>
-				<div class="links">
-					<a href="mailto:ramanmangla7@gmail.com" target="_blank">
-						<i class="fas fa-envelope"></i>
-					</a>
-					<a href="https://linkedin.com/in/ramanmangla" target="_blank">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-					<a href="https://github.com/ramanmangla" class="githubLink" target="_blank">
-						<i class="fab fa-github"></i>
-					</a>
-					<a href="https://www.behance.net/ramzie" target="_blank">
-						<i class="fab fa-behance"></i>
-					</a>
-				</div>
-			</div>
-			<i class="fas fa-chevron-down"></i>		
-		</div>
-	</section>
-	<section class="page" id="About">
-		<div class = "container">
-			<h2>About Me</h2>
-			<div class="contentContainer">
-				<div class="leftColumn">
-					<p>Hello! I'm <span class = "highlight">Raman Mangla</span> and I develop applications for the <span class = "highlight">web and beyond</span>. I'm passionate about design and development, which I combine to create amazing user experiences in my projects.
-					</p>
-					<p>Currently, I'm a third year undergraduate student at the <span class = "highlight">University of Toronto,</span> where I'm pursuing a degree in <span class = "highlight">Computer Engineering</span> with a minor in <span class = "highlight">Artificial Intelligence</span>. My areas of interest include machine learning and web and software development.
-					</p>
-					<h4>Technologies:</h4>
-					<ul>
-						<div>
-							<li>Flask</li>
-							<li>Node.js</li>
-							<li>Django</li>
-							<li>ReactJS</li>
-							<li>HTML5 & (S)CSS</li>
-						</div>
-						<div>
-							<li>C & C++</li>
-							<li>Python</li>
-							<li>JavaScript</li>
-							<li>Swift</li>
-							<li>SQL</li>
-						</div>
-						<div>
-							<li>Adobe Photoshop</li>
-							<li>Adobe Illustrator</li>
-							<li>Adobe InDesign</li>
-						</div>
-					</ul>
-				</div>
-				<div>
-					<div class="image">
-						<img src="Static/Images/Personal.jpg">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="page" id="Experience">
-		<div class = "container">
-			<h2>Experience</h2>
-			<div class="contentContainer experiences">
-				<nav>
-					<a href="#Publicis" class="activeExperience">Publicis Sapient</a>
-					<a href="#Stores">Engineering Stores</a>
-					<a href="#Ericsson">Ericsson Global</a>
-				</nav>
-				<div>
-					<div id="Publicis" class="description">
-						<div class="leftColumn">
-							<h3>Software Engineering Intern</h3>
-							<h4>Publicis Sapient</h4>
-							<h5>June 2019 - August 2019</h5>
-							<ul>
-								<li>Developed a Python application and a Chrome extension to optimize the DevOps pipeline and reduce the testing time for Adobe Cloud integrations</li>
-								<li>Built a Python application to conduct Time series forecasting of competitive pricing using ARIMA model for $1 billion+ clients</li>
-								<!-- Phone Plan Predictor -->
-								<li>Developed web-accessible front-end for clients using React, Handlebars.js and JavaScript ES6</li>
-							</ul>
-						</div>
-						<div>
-							<div class="image">
-								<img src="Static/Images/Sapient-logo.png">
-							</div>
-						</div>
-					</div>	
-					<div id="Stores" class="description">
-						<div class="leftColumn">
-							<h3>Web Development Lead</h3>
-							<h4>UofT Engineering Stores</h4>
-							<h5>June 2019 - Present</h5>
-							<ul>
-								<li>Developing and deploying a Django and MySQL based e-commerce platform with PayPal integration for textbook and merchandise sale</li>
-								<li>Created high fidelity prototypes for the website redesign for a modern brand identity</li>
-								<li>Integrated WooCommerce shopping cart and PayPal Checkout on the existing WordPress.org (PHP) website</li>
-							</ul>
-						</div>
-						<div>
-							<div class="image">
-								<img src="Static/Images/Stores-logo.png">
-							</div>
-						</div>
-					</div>	
-					<div id="Ericsson" class="description">
-						<div class="leftColumn">
-							<h3>Software Development Intern</h3>
-							<h4>Ericsson Global India</h4>
-							<h5>June 2018 - August 2018</h5>
-							<ul>
-								<li>Identified potential optimisations in Ericsson’s Revenue Management team as a GlobalLogic intern</li>
-								<li>Developed a Flask (Python) and SQLite based dashboard to automate monitoring of internal virtual machines and user access</li>
-								<li>Reduced build interruptions and accidental machine access through an email-based permission system for users</li>
-							</ul>
-						</div>
-						<div>
-							<div class="image">
-								<img src="Static/Images/Ericsson-logo.png">
-							</div>
-						</div>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="page" id="Projects">
-		<div class = "container">
-			<h2>Featured Projects</h2>
-			<div class="contentContainer">
-				<div class="project">
-					<div>
-						<h3>FunNight GIS</h3>
-						<p>A Geographic Information System with Yelp integration to plan a fun night out at restaurants, theatres and clubs in any city.</p>
-					</div>
-					<div class="projectTech">
-						<ul>
-							<li>C++</li>
-							<li>GTK</li>
-							<li>Yelp API</li>
-						</ul>
-						<a href="https://github.com/ramanmangla/Fun-Night-GIS">
-							<i class="fab fa-github"></i>
-						</a>
-					</div>
-				</div>
-				<div class="project">
-					<div>
-						<h3>Trendr Analytics</h3>
-						<p>Built an analytics platform to provide marketing insight for leveraging social media influencers and trends using Natural Language Processing.</p>
-					</div>
-					<div class="projectTech">
-						<ul>
-							<li>React</li>
-							<li>Twitter API</li>
-							<li>IBM Watson</li>
-						</ul>
-						<!-- <a href="https://github.com/ramanmangla/Digital-Audio-Equalizer">
+      gtag("config", "UA-144186279-1");
+    </script>
+
+    <link rel="icon" href="Static/Images/Logo.png" size="16x16" />
+
+    <link rel="stylesheet" type="text/css" href="Styles/main.css" />
+    <link href="Static/css/all.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono:200,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="#Home" id="logo">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              style="width: 2.8rem"
+              viewBox="0 0 617.969 484.896"
+              xml:space="preserve"
+            >
+              <g id="symbol">
+                <polygon
+                  style="fill: none; stroke-width: 35; stroke-miterlimit: 10"
+                  points="19.527,472.896 212.905,30.949 
+								406.3,472.896"
+                />
+                <polygon
+                  style="fill: none; stroke-width: 35; stroke-miterlimit: 10"
+                  points="213.389,472.896 406.768,30.949 
+								600.164,472.896"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="navLinks">
+          <i class="fas fa-times" id="closeNav"></i>
+          <a href="#About">About</a>
+          <a href="#Experience">Experience</a>
+          <a href="#Projects">Projects</a>
+          <a href="#Contact">Contact</a>
+          <a
+            href="https://drive.google.com/file/d/15om7IArv2r254WYqUCnhK97codEaBqsH/view?usp=sharing"
+            class="button resume"
+            target="_blank"
+            >Resume</a
+          >
+        </div>
+        <div id="navIcon"></div>
+      </nav>
+    </header>
+    <section class="page" id="Home">
+      <div class="container">
+        <div class="bannerContent">
+          <!-- <h6>...</h6> -->
+          <h3>Hello! I'm</h3>
+          <h1>Raman Mangla.</h1>
+          <h2>I build things for the web & beyond.</h2>
+          <p>
+            I'm a final year computer engineering student at the University of
+            Toronto with an interest in developing high performance
+            applications, distributed systems and AI.
+          </p>
+          <a href="mailto: ramanmangla7@gmail.com" class="button">Say Hello</a>
+          <!-- <div class="links">
+            <a href="mailto:ramanmangla7@gmail.com" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com/in/ramanmangla" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/ramanmangla"
+              class="githubLink"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.behance.net/ramzie" target="_blank">
+              <i class="fab fa-behance"></i>
+            </a>
+          </div> -->
+        </div>
+        <!-- <i class="fas fa-chevron-down"></i> -->
+      </div>
+    </section>
+    <section class="page" id="About">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="contentContainer">
+          <div class="leftColumn">
+            <p>
+              <!-- Should mention math, physics, problem solving and algos -->
+              Hello! I'm Raman Mangla and I develop applications for the web and
+              beyond. I'm passionate about software engineering and love working
+              on challenging real-world problems.
+            </p>
+            <p>
+              <!-- Currently, I'm a third year undergraduate student at the
+              <span class="highlight">University of Toronto,</span> where I'm
+              pursuing a degree in -->
+              <!-- <span class="highlight">Computer Engineering</span> with a minor
+              in <span class="highlight">Artificial Intelligence</span>. My
+              areas of interest include machine learning and web and software
+              development.-->
+              I'm a final year
+              <span class="highlight">computer engineering</span> student at the
+              <span class="highlight">University of Toronto</span> with an
+              interest in developing high performance applications, distributed
+              systems and artificial intelligence.
+            </p>
+            <p>My other interests include tennis, music and podcasts.</p>
+            <h4>Technologies:</h4>
+            <ul>
+              <div>
+                <li>Node.js</li>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>React</li>
+              </div>
+              <div>
+                <li>C/C++</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>TypeScript</li>
+              </div>
+              <div>
+                <li>SQL</li>
+                <li>PyTorch</li>
+              </div>
+            </ul>
+          </div>
+          <div>
+            <div class="image">
+              <img src="Static/Images/Personal.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page" id="Experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="contentContainer experiences">
+          <nav>
+            <a href="#Publicis" class="activeExperience">Publicis Sapient</a>
+            <a href="#Stores">Engineering Stores</a>
+            <a href="#Ericsson">Ericsson Global</a>
+          </nav>
+          <div>
+            <div id="Publicis" class="description">
+              <div class="leftColumn">
+                <h3>Software Engineering Intern</h3>
+                <h4>Publicis Sapient</h4>
+                <h5>June 2019 - August 2019</h5>
+                <ul>
+                  <li>
+                    Developed a Python application and a Chrome extension to
+                    optimize the DevOps pipeline and reduce the testing time for
+                    Adobe Cloud integrations
+                  </li>
+                  <!-- <li>
+                    Built a Python application to conduct Time series
+                    forecasting of competitive pricing using ARIMA model for $1
+                    billion+ clients
+                  </li> -->
+                  <!-- Phone Plan Predictor -->
+                  <li>
+                    Developed web-accessible front-end for clients using React,
+                    Handlebars.js and JavaScript ES6
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div class="image">
+                  <img src="Static/Images/Sapient-logo.png" />
+                </div>
+              </div>
+            </div>
+            <div id="Stores" class="description">
+              <div class="leftColumn">
+                <h3>Web Development Lead</h3>
+                <h4>UofT Engineering Stores</h4>
+                <h5>June 2019 - Present</h5>
+                <ul>
+                  <li>
+                    Developing and deploying a Django and MySQL based e-commerce
+                    platform with PayPal integration for textbook and
+                    merchandise sale
+                  </li>
+                  <li>
+                    Created high fidelity prototypes for the website redesign
+                    for a modern brand identity
+                  </li>
+                  <li>
+                    Integrated WooCommerce shopping cart and PayPal Checkout on
+                    the existing WordPress.org (PHP) website
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div class="image">
+                  <img src="Static/Images/Stores-logo.png" />
+                </div>
+              </div>
+            </div>
+            <div id="Ericsson" class="description">
+              <div class="leftColumn">
+                <h3>Software Development Intern</h3>
+                <h4>Ericsson Global India</h4>
+                <h5>June 2018 - August 2018</h5>
+                <ul>
+                  <li>
+                    Identified potential optimisations in Ericsson’s Revenue
+                    Management team as a GlobalLogic intern
+                  </li>
+                  <li>
+                    Developed a Flask (Python) and SQLite based dashboard to
+                    automate monitoring of internal virtual machines and user
+                    access
+                  </li>
+                  <li>
+                    Reduced build interruptions and accidental machine access
+                    through an email-based permission system for users
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div class="image">
+                  <img src="Static/Images/Ericsson-logo.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page" id="Projects">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="contentContainer">
+          <div class="project">
+            <div>
+              <h3>FunNight GIS</h3>
+              <p>
+                A Geographic Information System with Yelp integration to plan a
+                fun night out at restaurants, theatres and clubs in any city.
+              </p>
+            </div>
+            <div class="projectTech">
+              <ul>
+                <li>C++</li>
+                <li>GTK</li>
+                <li>Yelp API</li>
+              </ul>
+              <a href="https://github.com/ramanmangla/Fun-Night-GIS">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <h3>Trendr Analytics</h3>
+              <p>
+                Built an analytics platform to provide marketing insight for
+                leveraging social media influencers and trends using Natural
+                Language Processing.
+              </p>
+            </div>
+            <div class="projectTech">
+              <ul>
+                <li>React</li>
+                <li>Twitter API</li>
+                <li>IBM Watson</li>
+              </ul>
+              <!-- <a href="https://github.com/ramanmangla/Digital-Audio-Equalizer">
 							<i class="fab fa-github"></i>
 						</a> -->
-					</div>
-				</div>
-				<div class="project">
-					<div>
-						<h3>Monito</h3>
-						<p>A Flask web application to monitor and control user access to a network's virtual machines.</p>
-					</div>
-					<div class="projectTech">
-						<ul>
-							<li>Python</li>
-							<li>Flask</li>
-							<li>JavaScript</li>
-						</ul>
-						<a href="https://github.com/ramanmangla/Monito-App">
-							<i class="fab fa-github"></i>
-						</a>
-					</div>
-				</div>
-				<div class="project">
-					<div>
-						<h3>YouTubeSync</h3>
-						<p> An application to sync YouTube videos for users on multiple browser clients.</p>
-					</div>
-					<div class="projectTech">
-						<ul>
-							<li>WebSockets</li>
-							<li>Node.js</li>
-						</ul>
-						<a href="https://github.com/ramanmangla/YouTubeSync">
-							<i class="fab fa-github"></i>
-						</a>
-					</div>
-				</div>
-				<div class="project">
-					<div>
-						<h3>Messaging App</h3>
-						<p>An online instant messaging application with chat rooms for multiple users utilizing WebSockets.</p>
-					</div>
-					<div class="projectTech">
-						<ul>
-							<li>Node.js</li>
-							<li>MongoDB</li>
-						</ul>
-						<a href="https://github.com/ramanmangla/Node-chat-client">
-							<i class="fab fa-github"></i>
-						</a>
-					</div>
-				</div>
-				<div class="project">
-					<div>
-						<h3>ARM Piano Tiles</h3>
-						<p>An implementation of Piano Tiles mobile game for ARM Cortex A9 processor on the Altera DE1 SoC FPGA board.</p>
-					</div>
-					<div class="projectTech">
-						<ul>
-							<li>ARM Assembly</li>
-							<li>C</li>
-						</ul>
-						<a href="https://github.com/ramanmangla/ARM-Piano-Tiles">
-							<i class="fab fa-github"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-			<p>For other projects, checkout my <a href="https://github.com/ramanmangla">GitHub</a> profile.</p>
-		</div>
-	</section>
-	<section class="page" id="Contact">
-		<div class = "container">
-			<div class="bannerContent">
-				<!-- <h3>Hello! I'm</h3>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <h3>Monito</h3>
+              <p>
+                A Flask web application to monitor and control user access to a
+                network's virtual machines.
+              </p>
+            </div>
+            <div class="projectTech">
+              <ul>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="https://github.com/ramanmangla/Monito-App">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <h3>YouTubeSync</h3>
+              <p>
+                An application to sync YouTube videos for users on multiple
+                browser clients.
+              </p>
+            </div>
+            <div class="projectTech">
+              <ul>
+                <li>WebSockets</li>
+                <li>Node.js</li>
+              </ul>
+              <a href="https://github.com/ramanmangla/YouTubeSync">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project mobile-remove-project">
+            <div>
+              <h3>Messaging App</h3>
+              <p>
+                An online instant messaging application with chat rooms for
+                multiple users utilizing WebSockets.
+              </p>
+            </div>
+            <div class="projectTech">
+              <ul>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+              <a href="https://github.com/ramanmangla/Node-chat-client">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project mobile-remove-project">
+            <div>
+              <h3>ARM Piano Tiles</h3>
+              <p>
+                An implementation of Piano Tiles mobile game for ARM Cortex A9
+                processor on the Altera DE1 SoC FPGA board.
+              </p>
+            </div>
+            <div class="projectTech">
+              <ul>
+                <li>ARM Assembly</li>
+                <li>C</li>
+              </ul>
+              <a href="https://github.com/ramanmangla/ARM-Piano-Tiles">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <p>
+          For other projects, checkout my
+          <a href="https://github.com/ramanmangla">GitHub</a> profile.
+        </p>
+      </div>
+    </section>
+    <section class="page" id="Contact">
+      <div class="container">
+        <div class="bannerContent">
+          <!-- <h3>Hello! I'm</h3>
 				<h1>Raman Mangla</h1> -->
-				<h3>Interested in collaborating?</h3>
-				<div class="links">
-					<a href="mailto:ramanmangla7@gmail.com" target="_blank">
-						<i class="fas fa-envelope"></i>
-					</a>
-					<a href="https://linkedin.com/in/ramanmangla" target="_blank">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-					<a href="https://github.com/ramanmangla" class="githubLink" target="_blank">
-						<i class="fab fa-github"></i>
-					</a>
-					<a href="https://www.behance.net/ramzie" target="_blank">
-						<i class="fab fa-behance"></i>
-					</a>
-				</div>
-				<!-- <h2>Let's get a coffee!</h2> -->
-				<a href="https://drive.google.com/file/d/1julvgYA628lCsuuTlU1veGM05oeVUDio/view?usp=sharing" class="button" target="_blank">Resume</a>
-			</div>
-		</div>
-		<footer>
-			<div class="personal">
-				Designed and built by <span class="highlight">Raman Mangla</span>
-			</div>
-			<a href="https://github.com/ramanmangla/ramanmangla.github.io">View Source Code</a>
-		</footer>
-	</section>
-	<div class="loader">
+          <h3>Interested in collaborating?</h3>
+          <div class="links">
+            <a href="mailto:ramanmangla7@gmail.com" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com/in/ramanmangla" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/ramanmangla"
+              class="githubLink"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.behance.net/ramzie" target="_blank">
+              <i class="fab fa-behance"></i>
+            </a>
+          </div>
+          <!-- <h2>Let's get a coffee!</h2> -->
+          <a
+            href="https://drive.google.com/file/d/15om7IArv2r254WYqUCnhK97codEaBqsH/view?usp=sharing"
+            class="button"
+            target="_blank"
+            >Resume</a
+          >
+        </div>
+      </div>
+      <footer>
+        <div class="personal">
+          Designed and built by <span class="highlight">Raman Mangla</span>
+        </div>
+        <a href="https://github.com/ramanmangla/ramanmangla.github.io"
+          >View Source Code</a
+        >
+      </footer>
+    </section>
+    <!-- Loader -->
+    <!-- <div class="loader">
 		<div>
-			<!-- Loader -->
 		</div>
-	</div>
+	</div> -->
 
-	<script type="text/javascript" src="Scripts/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="Scripts/script.js"></script>
-</body>
+    <script type="text/javascript" src="Scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/script.js"></script>
+  </body>
 </html>
