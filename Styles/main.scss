@@ -785,6 +785,10 @@ header > nav {
       background: $sky-blue;
     }
 
+    a:hover {
+      background: $turquoise;
+    }
+
     i {
       font-size: 0.55em;
       position: relative;
@@ -796,7 +800,15 @@ header > nav {
       color: $sky-blue;
     }
 
+    .fa-github:hover {
+      color: $turquoise;
+    }
+
     .githubLink {
+      background: none;
+    }
+
+    .githubLink:hover {
       background: none;
     }
   }

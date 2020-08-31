@@ -740,6 +740,9 @@ header > nav {
   height: 0.8em;
   background: #47cff9;
 }
+#Contact .links a:hover {
+  background: #64ffda;
+}
 #Contact .links i {
   font-size: 0.55em;
   position: relative;
@@ -749,7 +752,13 @@ header > nav {
   font-size: 0.88em;
   color: #47cff9;
 }
+#Contact .links .fa-github:hover {
+  color: #64ffda;
+}
 #Contact .links .githubLink {
+  background: none;
+}
+#Contact .links .githubLink:hover {
   background: none;
 }
 
