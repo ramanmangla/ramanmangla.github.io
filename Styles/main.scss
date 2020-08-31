@@ -638,10 +638,11 @@ header > nav {
 
       > a {
         color: $turquoise;
+        text-decoration: underline;
       }
 
       > a:hover {
-        color: $sky-blue !important;
+        color: $off-white;
       }
     }
   }
@@ -732,42 +733,61 @@ header > nav {
 *******************************/
 
 #Contact {
-  h3 {
-    // font-family: "Roboto Mono";
-    font-size: 0.55em;
-    color: $white;
-    line-height: 1.4em;
-  }
+  // h3 {
+  //   // font-family: "Roboto Mono";
+  //   font-size: 0.55em;
+  //   color: $white;
+  //   line-height: 1.4em;
+  // }
 
-  h2 {
-    font-size: 1.1em;
-    font-family: "Overpass";
-    font-weight: 200;
-    margin-top: 0.6em;
-  }
+  // h2 {
+  //   font-size: 1.1em;
+  //   font-family: "Overpass";
+  //   font-weight: 200;
+  //   margin-top: 0.6em;
+  // }
 
   .bannerContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
+    top: -30px;
+
+    .button {
+      margin-top: 3em;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 0.73em;
+    color: $off-white;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 1.6em;
   }
 
   .links {
-    margin-top: 0.9em;
+    margin-top: 1em;
 
     a {
       margin: 0 0.2em;
-      width: 0.9em;
-      height: 0.9em;
+      width: 0.8em;
+      height: 0.8em;
     }
 
     i {
-      font-size: 0.6em;
+      font-size: 0.55em;
+      position: relative;
+      top: 1px;
     }
 
     .fa-github {
-      font-size: 0.95em;
+      font-size: 0.88em;
     }
   }
 }

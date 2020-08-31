@@ -637,9 +637,10 @@ header > nav {
 }
 #Projects .container > p > a {
   color: #64ffda;
+  text-decoration: underline;
 }
 #Projects .container > p > a:hover {
-  color: #47cff9 !important;
+  color: #cfdaf7;
 }
 #Projects .contentContainer {
   width: 100%;
@@ -716,36 +717,41 @@ header > nav {
 /******************************
 			Contact
 *******************************/
-#Contact h3 {
-  font-size: 0.55em;
-  color: #ffffff;
-  line-height: 1.4em;
-}
-#Contact h2 {
-  font-size: 1.1em;
-  font-family: "Overpass";
-  font-weight: 200;
-  margin-top: 0.6em;
-}
 #Contact .bannerContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-self: center;
+  top: -30px;
+}
+#Contact .bannerContent .button {
+  margin-top: 3em;
+}
+#Contact h2 {
+  text-align: center;
+  font-size: 0.73em;
+  color: #cfdaf7;
+}
+#Contact p {
+  text-align: center;
+  margin-top: 1.6em;
 }
 #Contact .links {
-  margin-top: 0.9em;
+  margin-top: 1em;
 }
 #Contact .links a {
   margin: 0 0.2em;
-  width: 0.9em;
-  height: 0.9em;
+  width: 0.8em;
+  height: 0.8em;
 }
 #Contact .links i {
-  font-size: 0.6em;
+  font-size: 0.55em;
+  position: relative;
+  top: 1px;
 }
 #Contact .links .fa-github {
-  font-size: 0.95em;
+  font-size: 0.88em;
 }
 
 .button {
