@@ -8,11 +8,11 @@
 $dark-blue: #091529;
 $sky-blue: #47cff9;
 $turquoise: #64ffda;
-$darker-blue: #09172c;
+$darker-blue: #051020;
 $white: #ffffff;
 $midnight-blue: #112c4c;
 $grey: #757e98;
-$blue-grey: #8892b0;
+$blue-grey: #929ec4;
 $off-white: #cfdaf7;
 $light-grey: #a8b2d1;
 
@@ -388,7 +388,7 @@ header > nav {
     // color: $turquoise;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    color: #8893b0;
+    color: $blue-grey;
     // letter-spacing: -1px;
   }
 
@@ -399,8 +399,8 @@ header > nav {
     font-size: 0.46em;
     max-width: 480px;
     text-align: left;
-    color: #8893b0;
-    margin-top: 3em;
+    color: $blue-grey;
+    margin-top: 2.4em;
   }
 
   .button {

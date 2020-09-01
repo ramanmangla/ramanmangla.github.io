@@ -41,10 +41,12 @@ $(document).ready(function () {
 
   function removeLoader() {
     setTimeout(function () {
-      $(".loader").fadeOut(500, function () {
-        $("body").css("overflow", "visible");
+      $("#loader-percent").fadeOut(400, function () {
+        $(".loader").fadeOut(200, function () {
+          $("body").css("overflow", "visible");
+        });
       });
-    }, 900);
+    }, 600);
   }
 
   var lastScroll = 0;
