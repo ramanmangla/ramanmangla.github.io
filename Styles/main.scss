@@ -43,8 +43,8 @@ body {
   /*overscroll-behavior: none;*/
   background: $color-background;
   margin: 0;
-  // overflow: hidden;
-  overflow: visible;
+  overflow: hidden;
+  // overflow: visible;
   transition: 1s ease;
 }
 
@@ -158,23 +158,23 @@ p {
 		Load Screen
 *******************************/
 
-@keyframes loaderBar {
-  0% {
-    left: -40px;
-  }
+// @keyframes loaderBar {
+//   0% {
+//     left: -40px;
+//   }
 
-  50% {
-    left: 40px;
-  }
+//   50% {
+//     left: 40px;
+//   }
 
-  // 75% {
-  //   left: -60px;
-  // }
+//   // 75% {
+//   //   left: -60px;
+//   // }
 
-  100% {
-    left: -40px;
-  }
-}
+//   100% {
+//     left: -40px;
+//   }
+// }
 
 // @keyframes loaderScreen {
 //   0% {
@@ -202,18 +202,24 @@ p {
   // animation-delay: 3s;
 }
 
-.loader {
-  div {
-    position: relative;
-    width: 50px;
-    height: 5px;
-    background: $turquoise;
-    animation-name: loaderBar;
-    animation-duration: 1.4s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-  }
+#loader-percent {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3em;
+  color: $turquoise;
 }
+
+// .loader {
+//   div {
+//     position: relative;
+//     width: 50px;
+//     height: 5px;
+//     background: $turquoise;
+//     animation-name: loaderBar;
+//     animation-duration: 1.4s;
+//     animation-timing-function: ease;
+//     animation-iteration-count: infinite;
+//   }
+// }
 
 /******************************
 			Header

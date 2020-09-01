@@ -6,19 +6,46 @@
 // callback after a long delay
 
 $(document).ready(function () {
+  // $("html,body").animate(
+  //   {
+  //     scrollTop: 0,
+  //   },
+  //   "fast",
+  //   function () {
+  //     setTimeout(function () {
+  //       $(".loader").fadeOut(800, function () {
+  //         $("body").css("overflow", "visible");
+  //       });
+  //     }, 2000);
+  //   }
+  // );
+  var loadPercent = 0;
+
   $("html,body").animate(
     {
       scrollTop: 0,
     },
     "fast",
     function () {
-      setTimeout(function () {
-        $(".loader").fadeOut(800, function () {
-          $("body").css("overflow", "visible");
-        });
-      }, 2000);
+      var interval = setInterval(function () {
+        $("#loader-percent").html(loadPercent + "%");
+        loadPercent = loadPercent + 1;
+
+        if (loadPercent >= 100) {
+          clearInterval(interval);
+          removeLoader();
+        }
+      }, 22);
     }
   );
+
+  function removeLoader() {
+    setTimeout(function () {
+      $(".loader").fadeOut(500, function () {
+        $("body").css("overflow", "visible");
+      });
+    }, 900);
+  }
 
   var lastScroll = 0;
 

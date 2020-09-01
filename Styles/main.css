@@ -157,7 +157,7 @@ body {
   /*overscroll-behavior: none;*/
   background: #091529;
   margin: 0;
-  overflow: visible;
+  overflow: hidden;
   transition: 1s ease;
 }
 
@@ -264,17 +264,6 @@ p {
 /******************************
 		Load Screen
 *******************************/
-@keyframes loaderBar {
-  0% {
-    left: -40px;
-  }
-  50% {
-    left: 40px;
-  }
-  100% {
-    left: -40px;
-  }
-}
 .loader {
   position: fixed;
   height: 100vh;
@@ -288,15 +277,10 @@ p {
   align-items: center;
 }
 
-.loader div {
-  position: relative;
-  width: 50px;
-  height: 5px;
-  background: #64ffda;
-  animation-name: loaderBar;
-  animation-duration: 1.4s;
-  animation-timing-function: ease;
-  animation-iteration-count: infinite;
+#loader-percent {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3em;
+  color: #64ffda;
 }
 
 /******************************
