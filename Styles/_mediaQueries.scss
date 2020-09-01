@@ -70,7 +70,7 @@
   }
 
   .experiences .description {
-    padding: 9% 8%;
+    padding: 10% 8%;
   }
 
   .project {
@@ -78,6 +78,10 @@
 
     p {
       padding-right: 30px;
+    }
+
+    .projectTech ul {
+      font-size: 0.39em;
     }
   }
 

@@ -389,7 +389,7 @@ header > nav {
   p {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
-    line-height: 155%;
+    line-height: 165%;
     font-size: 0.46em;
     max-width: 480px;
     text-align: left;
@@ -587,7 +587,7 @@ header > nav {
       position: relative;
       margin-bottom: 7px;
       padding-left: 0.8em;
-      line-height: 1.65em;
+      line-height: 1.75em;
     }
 
     li:before {
@@ -704,8 +704,8 @@ header > nav {
   }
 
   p {
-    font-size: 0.43em;
-    line-height: 1.6em;
+    font-size: 0.44em;
+    line-height: 1.65em;
     margin-top: 1.7em;
     text-align: left;
   }
@@ -725,6 +725,11 @@ header > nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  ul {
+    font-size: 0.35em;
+    font-family: "Roboto Mono", monospace;
+  }
 
   .fa-github {
     font-size: 0.75em;
