@@ -656,9 +656,9 @@ header > nav {
   width: 100%;
   height: 325px;
   min-height: 200px;
-  max-width: 280px;
+  max-width: 370px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 37px 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -667,7 +667,7 @@ header > nav {
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
 }
 .project h3 {
-  font-size: 0.5em;
+  font-size: 0.52em;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #64ffda;
@@ -684,13 +684,16 @@ header > nav {
   white-space: nowrap;
 }
 .project p {
-  font-size: 0.42em;
+  font-size: 0.43em;
   line-height: 1.6em;
   margin-top: 1.7em;
   text-align: left;
 }
 .project > div {
   width: 100%;
+}
+.project .hidden-link {
+  visibility: hidden;
 }
 
 .projectTech {
@@ -731,6 +734,8 @@ header > nav {
 #Contact p {
   text-align: center;
   margin-top: 1.6em;
+  line-height: 165%;
+  font-size: 0.45em;
 }
 #Contact .links {
   margin-top: 1em;
