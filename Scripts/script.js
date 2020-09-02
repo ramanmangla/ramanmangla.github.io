@@ -5,6 +5,16 @@
 // Hiding/Removing CSS loader from DOM using
 // callback after a long delay
 
+function removeLoader() {
+  setTimeout(function () {
+    $("#loader-percent").fadeOut(400, function () {
+      $(".loader").fadeOut(200, function () {
+        $("body").css("overflow", "visible");
+      });
+    });
+  }, 600);
+}
+
 $(document).ready(function () {
   // $("html,body").animate(
   //   {
@@ -30,7 +40,6 @@ $(document).ready(function () {
       var interval = setInterval(function () {
         $("#loader-percent").html(loadPercent + "%");
         loadPercent = loadPercent + 1;
-
         if (loadPercent >= 100) {
           clearInterval(interval);
           removeLoader();
@@ -38,16 +47,6 @@ $(document).ready(function () {
       }, 22);
     }
   );
-
-  function removeLoader() {
-    setTimeout(function () {
-      $("#loader-percent").fadeOut(400, function () {
-        $(".loader").fadeOut(200, function () {
-          $("body").css("overflow", "visible");
-        });
-      });
-    }, 600);
-  }
 
   var lastScroll = 0;
 
