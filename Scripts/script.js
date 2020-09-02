@@ -1,6 +1,6 @@
 // Starting from the top whenever page is refreshed
-// 20ms delay is used because browsers tend to go
-// back to last scroll position after the page is loaded
+// because browser goes back to last scroll position
+// after the page is loaded
 // Not after the dom is ready
 // Hiding/Removing CSS loader from DOM using
 // callback after a long delay
@@ -58,10 +58,15 @@ $("header nav a").on("click", function (e) {
   var targetHref = $(this).attr("href");
   // var offset = 0;
   // offset = targetHref == '#Projects' ? -40 : 0;
+  var scrollReqd = $(targetHref).offset().top - 25;
+
+  if (targetHref == "#Contact") {
+    scrollReqd = scrollReqd + 100;
+  }
 
   $("html, body").animate(
     {
-      scrollTop: $(targetHref).offset().top - 25,
+      scrollTop: scrollReqd,
     },
     1000
   );
@@ -72,7 +77,7 @@ $("header nav a").on("click", function (e) {
 // Current active experience
 var expTargetID = $("a[href='#Google']");
 
-// Experiences carousel
+// Experiences carousel navigation
 $(".experiences nav a").on("click", function (e) {
   e.preventDefault();
 
@@ -101,6 +106,7 @@ $(".experiences nav a").on("click", function (e) {
   );
 });
 
+// Ensure the same experience/nav link is in view on resize
 $(window).resize(function () {
   var container = $(".experience");
 
@@ -116,10 +122,7 @@ $(window).resize(function () {
 // Scroll Buttons for Experiences Nav
 $("#expNavLeftButton").on("click", function (e) {
   var expNav = $(".expMenu nav");
-  // var siblings = expTargetID.prevAll("a");
-  // console.log(siblings);
 
-  // if (siblings.length >= 1) {
   expNav.animate(
     {
       scrollLeft: expNav.scrollLeft() - (3 * expNav.width()) / 5,
@@ -131,9 +134,7 @@ $("#expNavLeftButton").on("click", function (e) {
 
 $("#expNavRightButton").on("click", function (e) {
   var expNav = $(".expMenu nav");
-  // var siblings = expTargetID.nextAll("a");
 
-  // if (siblings.length >= 1) {
   expNav.animate(
     {
       scrollLeft: expNav.scrollLeft() + (3 * expNav.width()) / 5,
