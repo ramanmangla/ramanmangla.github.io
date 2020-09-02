@@ -510,6 +510,19 @@ header > nav {
   padding-right: 1px;
 }
 
+.disable-scrollbars {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+.disable-scrollbars::-webkit-scrollbar {
+  width: 0px;
+  height: 0;
+  background: transparent;
+  /* Chrome/Safari/Webkit */
+}
+
 .expMenu {
   width: 100%;
   display: flex;
@@ -543,7 +556,7 @@ header > nav {
   color: #47cff9;
   display: flex;
   align-items: center;
-  overflow-x: hidden;
+  overflow-x: scroll;
   overflow-y: hidden;
   position: relative;
   border-left: 1px solid #112c4c;
