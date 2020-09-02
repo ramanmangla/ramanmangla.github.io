@@ -515,6 +515,56 @@ header > nav {
   }
 }
 
+.fix-collapse:after {
+  position: relative;
+  content: "";
+  // width: 1px;
+  padding-right: 1px;
+}
+
+// .disable-scrollbars {
+//   scrollbar-width: none; /* Firefox */
+//   -ms-overflow-style: none; /* IE 10+ */
+//   &::-webkit-scrollbar {
+//     width: 0px;
+//     height: 0;
+//     background: transparent; /* Chrome/Safari/Webkit */
+//   }
+// }
+
+.expMenu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  border-bottom: 1px solid $color-border;
+}
+
+.expNavButton {
+  height: 100%;
+  padding: 0 0.2em;
+  color: $midnight-blue;
+  font-weight: 300;
+  font-size: 0.85em;
+  // position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  // z-index: 3;
+}
+
+// #expNavLeftButton {
+//   top: 0;
+//   left: 0;
+// }
+
+// #expNavRightButton {
+//   top: 0;
+//   right: 0;
+// }
+
 .experiences {
   // display: block;
   background: rgba(0, 0, 0, 0.15);
@@ -524,22 +574,29 @@ header > nav {
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
 
   nav {
-    width: 100%;
+    flex: 1;
     color: $color-navlinks;
-    border-bottom: 1px solid $color-border;
     display: flex;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
     align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    border-left: 1px solid $color-border;
+    border-right: 1px solid $color-border;
 
     a {
       font-size: 0.47em;
       position: relative;
       padding: 15px 10px;
       font-weight: 400;
+      margin-left: 1.3em;
+      margin-right: 1.3em;
+      white-space: nowrap;
     }
   }
 
-  > div {
+  .experience {
     width: 100%;
     height: 100%;
     flex-grow: 1;
@@ -583,10 +640,10 @@ header > nav {
   }
 
   ul {
-    font-size: 0.44em;
+    font-size: 0.42em;
     color: $color-text;
     line-height: 150%;
-    margin-top: 20px;
+    margin-top: 15px;
     font-family: "Source Sans Pro", sans-serif;
 
     li {

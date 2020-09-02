@@ -5,30 +5,7 @@
 // Hiding/Removing CSS loader from DOM using
 // callback after a long delay
 
-// function removeLoader() {
-//   setTimeout(function () {
-//     $("#loader-percent").fadeOut(400, function () {
-//       $(".loader").fadeOut(200, function () {
-//         $("body").css("overflow", "visible");
-//       });
-//     });
-//   }, 600);
-// }
-
 $(document).ready(function () {
-  // $("html,body").animate(
-  //   {
-  //     scrollTop: 0,
-  //   },
-  //   "fast",
-  //   function () {
-  //     setTimeout(function () {
-  //       $(".loader").fadeOut(800, function () {
-  //         $("body").css("overflow", "visible");
-  //       });
-  //     }, 2000);
-  //   }
-  // );
   var loadPercent = 0;
 
   $("html").animate(
@@ -105,10 +82,19 @@ $(".experiences nav a").on("click", function (e) {
 
   $(expTargetID).addClass("activeExperience");
 
-  $(".experiences > div").animate(
+  // Ensure job link is within nav and not on edge
+  $(".experiences nav").animate(
     {
       scrollLeft:
-        $(".experiences > div").scrollLeft() +
+        $(".experiences nav").scrollLeft() + expTargetID.position().left,
+    },
+    600
+  );
+
+  $(".experience").animate(
+    {
+      scrollLeft:
+        $(".experience").scrollLeft() +
         $(expTargetID.attr("href")).position().left,
     },
     600
@@ -116,18 +102,46 @@ $(".experiences nav a").on("click", function (e) {
 });
 
 $(window).resize(function () {
-  var container = $(".experiences > div");
+  var container = $(".experience");
 
   container.scrollLeft(
     container.scrollLeft() + $(expTargetID.attr("href")).position().left
   );
+
+  var expNav = $(".experiences nav");
+
+  expNav.scrollLeft(expNav.scrollLeft() + expTargetID.position().left);
 });
 
-// $('#AboutLink').click(function() {
-//     $('html,body').animate({
-//         scrollTop: $("#About").offset().top
-//     }, 1000);
-// });
+// Scroll Buttons for Experiences Nav
+$("#expNavLeftButton").on("click", function (e) {
+  var expNav = $(".expMenu nav");
+  // var siblings = expTargetID.prevAll("a");
+  // console.log(siblings);
+
+  // if (siblings.length >= 1) {
+  expNav.animate(
+    {
+      scrollLeft: expNav.scrollLeft() - (3 * expNav.width()) / 5,
+    },
+    450
+  );
+  // }
+});
+
+$("#expNavRightButton").on("click", function (e) {
+  var expNav = $(".expMenu nav");
+  // var siblings = expTargetID.nextAll("a");
+
+  // if (siblings.length >= 1) {
+  expNav.animate(
+    {
+      scrollLeft: expNav.scrollLeft() + (3 * expNav.width()) / 5,
+    },
+    450
+  );
+  // }
+});
 
 // Responsive navigation
 $("#navIcon").on("click", function () {

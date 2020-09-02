@@ -185,11 +185,18 @@
       <div class="container">
         <h2>Experience</h2>
         <div class="contentContainer experiences">
-          <nav>
-            <a href="#Google" class="activeExperience">Google</a>
-            <a href="#Publicis">Publicis Sapient</a>
-            <a href="#Ericsson">Ericsson</a>
-          </nav>
+          <div class="expMenu">
+            <div id="expNavLeftButton" class="expNavButton"><</div>
+            <nav class="disable-scrollbars">
+              <a href="#Google" class="activeExperience">Google</a>
+              <a href="#Publicis">Publicis Sapient</a>
+              <a href="#Ericsson">Ericsson</a>
+              <a href="#aUToronto">aUToronto</a>
+              <a href="#EngStores">Engineering Stores</a>
+              <span class="fix-collapse"></span>
+            </nav>
+            <div id="expNavRightButton" class="expNavButton">></div>
+          </div>
           <div class="experience">
             <div id="Google" class="description">
               <div class="leftColumn">
@@ -275,6 +282,59 @@
               <div>
                 <div class="image">
                   <img src="Static/Images/Ericsson-logo.png" />
+                </div>
+              </div>
+            </div>
+            <div id="aUToronto" class="description">
+              <div class="leftColumn">
+                <h3>
+                  Software Engineer @
+                  <span class="highlight">aUToronto</span>
+                </h3>
+                <!-- <h4>Ericsson</h4> -->
+                <h5>September 2019 - March 2020</h5>
+                <ul>
+                  <li>
+                    Developed embedded routing software for the University's
+                    autonomous car using ROS and C++ to compete in General
+                    Motors’ AutoDrive Challenge
+                  </li>
+                  <li>
+                    Generated city data graphs and implemented dynamic routing
+                    algorithms, such as Lifelong Planning A*, as a part of the
+                    Planning and Navigation team
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div class="image">
+                  <img src="Static/Images/autoronto-logo.png" />
+                </div>
+              </div>
+            </div>
+            <div id="EngStores" class="description">
+              <div class="leftColumn">
+                <h3>
+                  Full-Stack Developer @
+                  <span class="highlight">UofT Engineering Stores</span>
+                </h3>
+                <!-- <h4>Ericsson</h4> -->
+                <h5>June 2019 - May 2020</h5>
+                <ul>
+                  <li>
+                    Built Django (Python) and PostgreSQL based web application
+                    backend for employee management and an e-commerce platform
+                    with over 120 products
+                  </li>
+                  <li>
+                    Designed and developed frontend for modern branding using
+                    JavaScript, SCSS and HTML
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div class="image">
+                  <img src="Static/Images/Stores-logo.png" />
                 </div>
               </div>
             </div>
