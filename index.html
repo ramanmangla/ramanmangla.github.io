@@ -40,25 +40,26 @@
     <link rel="icon" href="Static/Images/Logo.png" size="16x16" />
 
     <link rel="stylesheet" type="text/css" href="Styles/main.css" />
-    <!-- <link href="Static/css/all.css" rel="stylesheet" /> -->
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Mono:200,300&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Defer all.css loading -->
     <link
       rel="preload"
-      href="all.css"
+      href="Static/css/all.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript><link rel="stylesheet" href="all.css" /></noscript>
 
-    <link
+    <!-- Non-critical fonts loaded asynchronously at the end of body -->
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Source+Sans+Pro:wght@300&display=swap"
       rel="stylesheet"
-    />
+    /> -->
   </head>
   <body>
     <header>
@@ -485,6 +486,22 @@
       <div id="loader-percent"></div>
     </div>
 
+    <!-- Load fonts asynchronously -->
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: {
+          families: ["Roboto:300,400,500|Source+Sans+Pro:300"],
+        },
+      };
+      (function () {
+        var wf = document.createElement("script");
+        wf.src = "https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";
+        wf.type = "text/javascript";
+        wf.async = "true";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
     <script type="text/javascript" src="Scripts/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="Scripts/script.js"></script>
   </body>
